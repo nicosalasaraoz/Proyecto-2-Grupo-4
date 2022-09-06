@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrada Blog: The Batman</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="./estilos/entrada.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&family=Raleway&family=Roboto:wght@400;900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d4c04a1274.js" crossorigin="anonymous"></script>
+</head>
+
+<!-- La clase de body permite ocupar minimamente el 100% de la pantalla asi ajustamos el footer al pie de pagina mediante
+un contenedor flexible -->
+
+<body class="d-flex flex-column min-vh-100">
+    <header>
+
+        <!-- Inicio del navbar -->
+        <nav class="navbar navbar-expand-lg bg-dark fixed-top" id="navbar-color">
+            <div class="container-fluid">
+                <a href="/index.html">
+                    <img class="rounded-circle" src="/img/logo.jpeg" width="50" height="50" alt="logo">
+                </a>
+                <div class="letra text-light mx-3">
+                    <a class="btn" href="/index.html" id="pochocleros">
+                        <p class="p-0 m-0">POCHOCLEROS</p>
+                    </a>
+                </div>
+                <button class="navbar-toggler boton-hamburguesa" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-film"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="/contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="/nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="/galeria.html">GALERíA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="login.html">LOGIN</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <button type="button" class="btn" id="suscripcion-boton" data-bs-toggle="modal"
+                            data-bs-target="#suscripcion">
+                            Suscripción <i class="fa-regular fa-bell"></i>
+                        </button>
+                    </div>
+                </div>
+        </nav>
+
+        <!-- Inicio del modal de "SUSCRIPCION" -->
+        <div class="modal" id="suscripcion" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content modificar-modal">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center text-light"> <svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+                            </svg> Suscríbite</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Nombre y Apellido</label>
+                                <input type="name" class="form-control" id="text" required placeholder="Robert De Niro">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" required  placeholder="nombre@email.com">
+                                <div id="emailHelp" class="form-text">
+                                    Nunca compartiremos tu correo electrónico con nadie más.</div>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Recibir Notificaciones</label>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="sumbit" class="btn btn-dark">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin del modal de "SUSCRIPCION" -->
+
+        <!-- Fin del navbar -->
+    </header>
+
+    <main>
+        <div class="container-fluid p-0 m-0 d-flex flex-column pt-3">
+            <div class="container-fluid m-0 px-5 pt-1" id="principal">
+
+                <!-- Inicio del titulo, duración y puntuaciones de la pelicula -->
+                <div class="container-fluid d-flex justify-content-between p-0 m-0 mt-3">
+                    <div class="container-fluid p-0 m-0">
+                        <h1>The Batman</h1>
+                        <p>2022 - 2h 56 min</p>
+                    </div>
+                    <div class="container-fluid d-none d-sm-block m-0 p-0 justify-content-end">
+                        <div class="row w-100 justify-content-end">
+                            <div class="col-12 col-sm-5 text-center p-0">
+                                <p class="m-0 d-flex flex-column">PUNTUACIÓN GENERAL<i
+                                        class="puntuacion fa-solid fa-star"></i>7/10</p>
+
+                            </div>
+                            <div class="col-0 col-sm-7 text-center p-0">
+                                <p class="m-0 d-flex flex-column">TU PUNTUACIÓN<i
+                                        class="puntuacion-user fa-solid fa-star"></i>9/10</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin del titulo, duración y puntuaciones de la pelicula -->
+
+                <!-- Inicio del div que contiene trailer, poster y opciones de la pelicula -->
+                <div class="container-fluid p-0 m-0">
+                    <div class="row w-100 p-0 m-0">
+                        <!--Inicio del bloque oculto en medidas <560px-->
+                        <div class="row w-100 m-0 p-0 mt-1 justify-content-between puntuacion-none">
+                            <div class="col-4 d-flex d-sm-none p-0 m-0 w-25 img-none">
+                                <img src="https://m.media-amazon.com/images/M/MV5BYTExZTdhY2ItNGQ1YS00NjJlLWIxMjYtZTI1MzNlMzY0OTk4XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg"
+                                    class="img-fluid" alt="">
+                            </div>
+                            <div class="col-8 container-fluid m-0 p-0 d-flex d-sm-none puntuaciones-none">
+                                <div class="row m-0 p-0">
+                                    <div
+                                        class="col-12 d-sm-none text-center p-0 d-flex align-items-center justify-content-center">
+                                        <p class="m-0 d-flex flex-column">PUNTUACIÓN GENERAL<i
+                                                class="puntuacion fa-solid fa-star"></i>8.6/10</p>
+
+                                    </div>
+                                    <div
+                                        class="col-0 d-sm-none text-center p-0 d-flex align-items-center justify-content-center">
+                                        <p class="m-0 d-flex flex-column">TU PUNTUACIÓN<i
+                                                class="puntuacion-user fa-solid fa-star"></i>9/10</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Fin del bloque oculto en medidas <560px-->
+                        <div class="d-none d-sm-flex col-sm-8 col-sm-4 col-lg-2 p-0 m-0 w-25 d-flex px-1">
+                            <img src="https://m.media-amazon.com/images/M/MV5BYTExZTdhY2ItNGQ1YS00NjJlLWIxMjYtZTI1MzNlMzY0OTk4XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg"
+                                class="img-fluid" alt="">
+                        </div>
+                        <div class="col-12 col-sm-9 col-lg-7 p-0 m-0 d-flex" id="trailer">
+                            <video controls autoplay muted loop>
+                                <source src="./videos/The Batman _ _Vengeance_ Trailer Concept _ HBO Max.mp4"
+                                    type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="col-12 col-sm-12 col-lg-2 p-0 m-0 px-0 px-sm-1" id="opciones">
+
+                            <!-- Inicio de los tres botones que se encuentran cerca del trailer -->
+                            <div class="row h-100 m-0 p-0 primer-fila">
+                                <div class="col-12 col-sm-4 p-0 m-0" id="opcion-inicial">
+                                    <div
+                                        class="atajos container-fluid m-0 p-0 h-100 d-flex justify-content-center align-items-center">
+                                        <a href="#reparto-atajo"
+                                            class="btn w-100 h-100 d-flex justify-content-center align-items-center flex-column">
+                                            <i class="fa-solid fa-film"></i>
+                                            REPARTO
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4 p-0 m-0 py-1" id="opcion-intermedia">
+                                    <div
+                                        class="atajos container-fluid m-0 p-0 h-100 d-flex justify-content-center align-items-center">
+                                        <a href="#detalles-atajo"
+                                            class="btn w-100 h-100 d-flex justify-content-center align-items-center flex-column">
+                                            <p class="d-flex flex-column m-0 p-0"><i class="fa-solid fa-film"></i>
+                                                DETALLES</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4 p-0 m-0" id="opcion-final">
+                                    <div
+                                        class="atajos container-fluid m-0 p-0 h-100 d-flex justify-content-center align-items-center">
+                                        <a href="#comentarios-atajo"
+                                            class="btn w-100 h-100 d-flex justify-content-center align-items-center flex-column">
+                                            <p class="d-flex flex-column m-0 p-0"><i class="fa-solid fa-comments"></i>
+                                                COMENTARIOS</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Fin de los tres botones que se encuentran cerca del trailer -->
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin del div que contiene trailer, poster y opciones de la pelicula -->
+
+                <!-- Inicio del resumen de la descripción de la pelicula -->
+                <div class="container-fluid p-0 m-0">
+                    <div class="row w-100 m-0 p-0 pb-3">
+                        <div class="col-12 col-md-8 p-0 m-0 mt-3 pt-3 acerca-de">
+                            <div class="container-fluid p-0 m-0 d-flex flex-row flex-wrap">
+                                <a href="" class="btn boton-genero-movie px-3">Acción</a>
+                                <a href="" class="btn boton-genero-movie px-3">Crimen</a>
+                                <a href="" class="btn boton-genero-movie px-3">Drama</a>
+                            </div>
+                            <p class="pt-2">Cuando el Acertijo, un sádico asesino en serie, comienza a asesinar a las
+                                principales figuras
+                                políticas de Gotham, Batman se ve obligado a investigar la corrupción oculta de la
+                                ciudad y
+                                a cuestionar la participación de su familia.</p>
+                            <hr>
+                            <p><b>Dirección:</b> <a href="">Matt Reeves</a></p>
+                            <hr>
+                            <p><b>Guión :</b> <a href="">Matt Reeves</a> / <a href="">Peter Craig</a> / <a href="">Bill
+                                    Finger</a> (Creador de: Batman)</p>
+                            <hr>
+                            <p><b>Reparto Principal:</b> <a href="">Robert Pattinson</a> / <a href="">Zoë Kravitz</a> /
+                                <a href="">Jeffrey Wright</a>
+                            </p>
+                            <hr>
+                            <p><b>Año de lanzamiento:</b> 2022</p>
+                        </div>
+                        <div class="col-12 col-md-4 p-0 m-0 mt-3 pt-3">
+                            <div class="container-fluid m-0 p-0">
+                                <div class="row m-0 p-0 h-auto">
+                                    <div class="col-12 m-0 p-0 premios">
+                                        <h6 class="text-center sub-titulo">PREMIOS Y NOMICACIONES</h6>
+                                        <p class="px-3">ACCEC Awards (2022): Ganador</p>
+                                        <p class="px-3">Golden Trailer Awards (2021): Nominado</p>
+                                        <p class="px-3">Hollywood Critics Association Midseason Awards (2022): Nominado
+                                        </p>
+                                        <p class="px-3">MTV Movie + TV Awards (2022): Nominado</p>
+                                    </div>
+                                    <div
+                                        class="col-12 m-0 p-0 pt-4 h-auto d-flex flex-column align-items-center ver-pelicula">
+                                        <p class="text-center">Ver Pelicula en HBO Max:</p>
+                                        <a href="https://www.hbomax.com/ni/es/feature/urn:hbo:feature:GYiDbSAmIpMNvYAEAAAAI"
+                                            target="_blank" class="btn m-0 p-0">
+                                            <img src="https://hbomax-images.warnermediacdn.com/2020-05/square%20social%20logo%20400%20x%20400_0.png"
+                                                class="img-fluid" alt="logo-hbo.png">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin del resumen de la descripción de la pelicula -->
+
+            </div>
+
+            <!-- Inicio del div que contendra reparto, comentarios/reseñas e info extra de la pelicula -->
+            <div class="container-fluid m-0 px-4 pt-1 secundario">
+                <div class="container-fluid p-0 m-0">
+                    <div class="row m-0 p-0">
+                        <div class="col-12 col-sm-8 p-0">
+
+                            <!-- Inicio de la columna que contiene el reparto de la pelicula  -->
+                            <div class="container-fluid m-0 p-0">
+                                <div class="container-fluid m-0 p-0 sub-titulo">
+                                    <h2 id="reparto-atajo">REPARTO</h2>
+                                </div>
+                                <div class="container-fluid m-0 p-0">
+                                    <div class="row m-0 p-0">
+                                        <div class="col-12 col-sm-12 col-md-6 m-0 p-0 actor d-flex flex-row">
+                                            <img src="https://m.media-amazon.com/images/M/MV5BNzk0MDQ5OTUxMV5BMl5BanBnXkFtZTcwMDM5ODk5Mg@@._V1_UY317_CR12,0,214,317_AL_.jpg"
+                                                class="img-fluid" alt="">
+                                            <div
+                                                class="container-fluid m-0 p-0 px-3 d-flex flex-column justify-content-start">
+                                                <b class="p-0 pt-4 m-0 nombre">Robert Pattinson</b>
+                                                <p class="papel">Bruce Wayne / Batman</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-6 m-0 p-0 actor d-flex flex-row">
+                                            <img src="https://m.media-amazon.com/images/M/MV5BM2NmMWViOTYtOGJhYi00MzU2LWI5ODYtOGJhYzhkMWViODY5XkEyXkFqcGdeQXVyNjk2NTA3MTc@._V1_UX214_CR0,0,214,317_AL_.jpg"
+                                                class="img-fluid" alt="">
+                                            <div
+                                                class="container-fluid m-0 p-0 px-3 d-flex flex-column justify-content-start">
+                                                <b class="p-0 pt-4 m-0 nombre">Zoë Kravitz</b>
+                                                <p class="papel">Selina Kyle / Catwoman</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row m-0 p-0">
+                                        <div class="col-12 col-sm-12 col-md-6 m-0 p-0 actor d-flex flex-row">
+                                            <img src="https://m.media-amazon.com/images/M/MV5BMjI1NDYyNzk4OV5BMl5BanBnXkFtZTgwNDAyMzI1MDI@._V1_UY317_CR131,0,214,317_AL_.jpg"
+                                                class="img-fluid" alt="">
+                                            <div
+                                                class="container-fluid m-0 p-0 px-3 d-flex flex-column justify-content-start">
+                                                <b class="p-0 pt-4 m-0 nombre">Jeffrey Wright</b>
+                                                <p class="papel">Lt. James Gordon</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-6 m-0 p-0 actor d-flex flex-row">
+                                            <img src="https://m.media-amazon.com/images/M/MV5BMjMwMzE1OTc0OF5BMl5BanBnXkFtZTcwMDU2NTg0Nw@@._V1_UY317_CR8,0,214,317_AL_.jpg"
+                                                class="img-fluid" alt="">
+                                            <div
+                                                class="container-fluid m-0 p-0 px-3 d-flex flex-column justify-content-start">
+                                                <b class="p-0 pt-4 m-0 nombre">Paul Dano</b>
+                                                <p class="papel">The Riddler</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row m-0 p-0">
+                                        <div class="col-12 col-sm-12 col-md-6 m-0 p-0 actor d-flex flex-row">
+                                            <img src="https://m.media-amazon.com/images/M/MV5BMTg4NzM5NDk0MV5BMl5BanBnXkFtZTcwNzAzMTUxNw@@._V1_UY317_CR3,0,214,317_AL_.jpg"
+                                                class="img-fluid" alt="">
+                                            <div
+                                                class="container-fluid m-0 p-0 px-3 d-flex flex-column justify-content-start">
+                                                <b class="p-0 pt-4 m-0 nombre">Colin Farrel</b>
+                                                <p class="papel">Oz, The Penguin</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-6 m-0 p-0 actor d-flex flex-row">
+                                            <img src="https://m.media-amazon.com/images/M/MV5BNzYwNjgwMjMxMF5BMl5BanBnXkFtZTcwNjUwOTc3NQ@@._V1_UY317_CR25,0,214,317_AL_.jpg"
+                                                class="img-fluid" alt="">
+                                            <div
+                                                class="container-fluid m-0 p-0 px-3 d-flex flex-column justify-content-start">
+                                                <b class="p-0 pt-4 m-0 nombre">John Turturro</b>
+                                                <p class="papel">Carmine Falcone</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Fin de la columna que contiene el reparto de la pelicula  -->
+
+                            <!-- Inicio de los detalles de la pelicula -->
+                            <div class="container-fluid m-0 p-0">
+                                <div class="container-fluid m-0 p-0 sub-titulo">
+                                    <h2 id="detalles-atajo">DETALLES</h2>
+                                </div>
+                                <div class="container-fluid m-0 p-0">
+                                    <div class="container-fluid">
+                                        <h5 class="sub-titulo-detalles">Argumento</h5>
+                                        <p>"Batman se aventura en los bajos fondos de Gotham City cuando un sádico
+                                            asesino deja
+                                            tras de sí un rastro de pistas crípticas. A medida que la evidencia comienza
+                                            a
+                                            conducir más cerca de casa y la escala de los planes del perpetrador se
+                                            vuelve
+                                            clara, debe forjar nuevas relaciones, desenmascarar al culpable y hacer
+                                            justicia por
+                                            el abuso de poder y la corrupción que ha plagado durante mucho tiempo a la
+                                            metrópolis."</p>
+                                    </div>
+                                </div>
+
+                                <div class="container-fluid m-0 p-0">
+                                    <div class="container-fluid sobre-pelicula">
+                                        <h5 class="sub-titulo-detalles">Sobre la pelicula</h5>
+                                        <hr>
+                                        <p><b>Fecha de lanzamiento: </b> <a href="">4 de marzo de 2022</a></p>
+                                        <hr>
+                                        <p><b>País de origen: </b> <a href="">Estados Unidos</a></p>
+                                        <hr>
+                                        <p><b>Iidiomas: </b> <a href="">Inglés</a> / <a href="">Español</a> / <a
+                                                href="">Latín</a> / <a href="">Italiano</a></p>
+                                        <hr>
+                                        <p><b>Titulos en diferentes paises: </b> Batman / The Batman</p>
+                                        <hr>
+                                        <p><b>Localizaciones del rodaje: </b> <a href="">Necropolis Cemetery, Glasgow,
+                                                Escocia, Reino Unido</a></p>
+                                        <hr>
+                                        <p><b>Empresas productoras: </b><a href="">Warner Bros</a> / <a href="">DC
+                                                Entertainment</a> / <a href="">6th & Idaho Productions</a> </p>
+                                        <hr>
+
+                                    </div>
+                                </div>
+
+                                <div class="container-fluid m-0 p-0">
+                                    <div class="container-fluid">
+                                        <h5 class="sub-titulo-detalles">Taquilla</h5>
+                                        <div class="container-fluid m-0 p-0 taquilla">
+                                            <div class="row p-0 m-0">
+                                                <div class="col-12 col-sm-6 d-flex flex-column p-0">
+                                                    <p class="m-0"><b>Presupuesto</b></p>
+                                                    <p>200.000.000 US$(estimación)</p>
+                                                </div>
+                                                <div class="col-12 col-sm-6 d-flex flex-column">
+                                                    <p class="m-0"><b>Recaudación en EEUU</b></p>
+                                                    <p>369.345.583 US$</p>
+                                                </div>
+                                            </div>
+                                            <div class="row p-0 m-0">
+                                                <div class="col-12 col-sm-6 d-flex flex-column p-0">
+                                                    <p class="m-0"><b>Fin de semana de estreno en EE. UU. y Canadá</b>
+                                                    </p>
+                                                    <p>134.008.624 US$ - 6 marzo 2022</p>
+                                                </div>
+                                                <div class="col-12 col-sm-6 d-flex flex-column">
+                                                    <p class="m-0"><b>Recaudación en todo el mundo</b></p>
+                                                    <p>770.836.163 US$</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="container-fluid m-0 p-0">
+                                    <div class="container-fluid especificiaciones">
+                                        <h5 class="sub-titulo-detalles">Especificaciones Tecnicas</h5>
+                                        <p><b>Duración: </b> 2 horas 56 minutos</p>
+                                        <p><b>Color: </b><a href="">Color</a></p>
+                                        <p><b>Mezcla de sonido: </b> <a href="">SDDS</a> / <a href="">IMAX 6-Track</a> /
+                                            <a href="">Dolby Digital</a> / <a href="">Dolby Atmos</a>
+                                        </p>
+                                        <p><b>Relación de aspecto: </b>2.39 : 1</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Fin de los detalles de la pelicula -->
+
+                            <!-- Inicio de las reseñas o comentarios realizados por los usuarios de la pagina, y un
+                            form para realizar comentarios -->
+                            <div class="container-fluid m-0 p-0">
+                                <div class="container-fluid m-0 p-0 sub-titulo">
+                                    <h2 id="comentarios-atajo">COMENTARIOS</h2>
+                                </div>
+                                <div class="container-fluid m-0 p-0">
+                                    <div class="container-fluid m-0 p-0 d-flex flex-row">
+                                        <img src="https://peru21.pe/resizer/TZ3Qq_ZeVU2CoAy1MZbaYgH1Klk=/1200x1200/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/LJUMOSNOINDF5DX2UKA4N5LOGY.jpg"
+                                            alt="" class="img-fluid user-comentario">
+                                        <h4 class="d-flex align-items-center m-0 p-0 px-1"> Robert Pattinson</h4>
+                                    </div>
+
+                                    <p class="px-5">Actua bien quien hace de Batman!!</p>
+                                </div>
+                                <div class="container-fluid m-0 p-0">
+                                    <div class="container-fluid m-0 p-0 d-flex flex-row">
+                                        <img src="https://www.loslunesseriefilos.com/wp-content/uploads/2016/03/0d468924_edit_img_image_88_1433873233_PaulDano.xxlarge.jpg"
+                                            alt="" class="img-fluid user-comentario">
+                                        <h4 class="d-flex align-items-center m-0 p-0 px-1">Paul Dano</h4>
+                                    </div>
+
+                                    <p class="px-5">Muy buena pelicula!!</p>
+                                </div>
+                                <div class="container-fluid m-0 p-0">
+                                    <div class="container-fluid m-0 p-0">
+                                        <div class="container-fluid m-0 p-0 d-flex flex-row">
+                                            <img src="https://pbs.twimg.com/profile_images/1327253266229571585/vJtn7pHw_400x400.jpg"
+                                                alt="" class="img-fluid user-comentario">
+                                            <h4 class="d-flex align-items-center m-0 p-0 px-1"> Lionel Messi</h4>
+                                        </div>
+                                        <p class="px-5">Messirve</p>
+                                    </div>
+                                    <div class="container-fluid px-5">
+                                        <div class="container-fluid m-0 p-0 d-flex flex-row">
+                                            <img src="https://peru21.pe/resizer/TZ3Qq_ZeVU2CoAy1MZbaYgH1Klk=/1200x1200/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/LJUMOSNOINDF5DX2UKA4N5LOGY.jpg"
+                                                alt="" class="img-fluid user-comentario">
+                                            <h4 class="d-flex align-items-center m-0 p-0 px-1"> Robert Pattinson</h4>
+                                        </div>
+
+                                        <p class="px-5">¿Qué hace Messi acá?</p>
+                                    </div>
+                                </div>
+                                <div class="container-fluid m-0 p-0">
+                                    <div class="container-fluid m-0 p-0 d-flex flex-row">
+                                        <img src="data:image/png;base64,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"
+                                            alt="" class="img-fluid user-comentario">
+                                        <h4 class="d-flex align-items-center m-0 p-0 px-1"> Rolling Code</h4>
+                                    </div>
+                                    <p class="px-5">10/10 la pelicula!!</p>
+                                </div>
+                                <hr>
+                                <form action="" class="caja-comentarios">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Usuario</label>
+                                        <input type="name" class="form-control comentario" id="exampleFormControlInput1"
+                                            placeholder="El venganzas">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlTextarea1" class="form-label">Caja de
+                                            comentarios</label>
+                                        <textarea class="form-control comentario" id="exampleFormControlTextarea1"
+                                            rows="3"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn boton-comentar">Comentar</button>
+                                </form>
+                            </div>
+                            <!-- Fin de las reseñas o comentarios realizados por los usuarios de la pagina, y un
+                            form para realizar comentarios -->
+
+                        </div>
+
+                        <!-- Inicio de las peliculas o series recomendadas por la pagina -->
+                        <div class="col-12 col-sm-4 p-0">
+                            <div class="container-fluid m-0 p-0 sub-titulo">
+                                <h2>MAS CONTENIDO</h2>
+                            </div>
+                            <div class="container-fluid m-0 p-0 mas-contenido">
+                                <div class="row m-0 p-0">
+                                    <div class="col-6 m-0 p-1">
+                                        <a href="/error_404.html">
+                                            <img src="https://m.media-amazon.com/images/M/MV5BMGExOWU4YmItMjkxOC00NjdjLTk2ZWEtZGViMGM1ZGFhZmQxXkEyXkFqcGdeQXVyODQyOTY2OTA@._V1_FMjpg_UX1000_.jpg"
+                                                class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-6 m-0 p-1">
+                                        <a href="/error_404.html">
+                                            <img src="https://m.media-amazon.com/images/M/MV5BYmMxZWRiMTgtZjM0Ny00NDQxLWIxYWQtZDdlNDNkOTEzYTdlXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg"
+                                                class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row m-0 p-0">
+                                    <div class="col-6 m-0 p-1">
+                                        <a href="/error_404.html">
+                                            <img src="https://m.media-amazon.com/images/M/MV5BZmFkN2VjNGUtZTEyNC00MmFiLWJmNGUtMjYyMmUwYmIyOWY3XkEyXkFqcGdeQXVyNDg0NjMwNDY@._V1_FMjpg_UX1000_.jpg"
+                                                class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-6 m-0 p-1">
+                                        <a href="/error_404.html">
+                                            <img src="https://m.media-amazon.com/images/M/MV5BYTg2Zjk0ZTctM2ZmMi00MDRmLWJjOGYtNWM0YjBmZTBjMjRkXkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_FMjpg_UX1000_.jpg"
+                                                class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row m-0 p-0">
+                                    <div class="col-6 m-0 p-1">
+                                        <a href="/error_404.html">
+                                            <img src="https://m.media-amazon.com/images/M/MV5BZWE4ZWMwOTYtZDkyYi00NWEwLTgyNWYtNWNkNjhlMjBmZTJmXkEyXkFqcGdeQXVyMzQwMTY2Nzk@._V1_FMjpg_UX1000_.jpg"
+                                                class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-6 m-0 p-1">
+                                        <a href="/error_404.html">
+                                            <img src="https://m.media-amazon.com/images/M/MV5BODk2NjAyOWMtM2FjZC00MjZhLTkxMjQtZTM3NjJlYTE5MDdlXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg"
+                                                class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-6 m-0 p-1">
+                                        <a href="/error_404.html">
+                                            <img src="img/obi-wan.jpg" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-6 m-0 p-1">
+                                        <a href="/error_404.html">
+                                            <img src="img/mos.jpg" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fin de las peliculas o series recomendadas por la pagina -->
+
+                    </div>
+                </div>
+            </div>
+            <!-- Fin del div que contendra reparto, comentarios/reseñas e info extra de la pelicula -->
+
+        </div>
+    </main>
+
+    <!-- Inicio del footer -->
+    <footer class="mt-auto">
+        <div class="row m-0 p-0 pt-4 text-white w-100 hover-links">
+            <div class="col-12 col-sm-12 col-md-4 p-0 d-flex flex-column align-items-center">
+                <a href="./index.html" class="m-0 p-0 d-flex flex-column align-items-center text-decoration-none">
+                    <img class="rounded-circle" src="/img/logo.jpeg" width="100" height="100" alt="logo">
+                    <h5 class="my-2">Pochocleros ©</h5>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 p-0" id="redes">
+                <p class="h5 mb-3">Redes sociales</p>
+                <div class="mb-2">
+                    <i class="fa-brands fa-facebook"></i>
+                    <a class="text-secondary text-decoration-none" href="https://www.facebook.com/">Facebook</a>
+                </div>
+                <div class="mb-2">
+                    <i class="fa-brands fa-github"></i>
+                    <a class="text-secondary text-decoration-none"
+                        href="https://github.com/nicosalasaraoz/proyecto_1_grupo2">GitHub</a>
+                </div>
+                <div class="mb-2">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <a class="text-secondary text-decoration-none" href="https://www.linkedin.com/">Linkedin</a>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 p-0" id="info-footer">
+                <p class="h5 mb-3">Información</p>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="/error_404.html">Terminos & condiciones</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="/error_404.html">
+                        Política de privacidad</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="/contacto.html">Contacto</a>
+                </div>
+            </div>
+            <div class="col-xs-12 p-0 mt-4 copyright">
+                <p class="m-0 my-2 text white text-center">Copyright - Pochocleros © 2022</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Fin del footer -->
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

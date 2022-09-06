@@ -1,0 +1,417 @@
+/* Ajustar paddings y ancho del main */
+main {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100% !important;
+}
+
+/* Inicio de modificar modal suscripción*/
+.modificar-modal{
+    background-color: rgba(8, 8, 8, 0.904) !important;
+}
+.modificar-modal input {
+    background-color: rgba(8, 8, 8, 0.904) !important;
+    color: rgb(194, 190, 190) !important;
+}
+
+.modificar-modal>.modal-body button, .modificar-modal>.modal-footer button {
+    border: 3px solid black;
+    color: black;
+    background-color: #DEB522;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 900 !important;
+}
+/* Fin de modificar modal suscripción*/
+
+/* Inicio del editar boton "POCHOCLERO" */
+#suscripcion-boton {
+    border: 3px solid black !important;
+    color: black !important;
+    background-color: #c0a131 !important;
+    font-family: 'IBM Plex Sans', sans-serif !important;
+    font-weight: 900 !important;
+    border-radius: 25%;
+}
+#suscripcion-boton:hover {
+    border: 3px solid rgb(34, 34, 34) !important;
+    color: rgb(34, 34, 34) !important;
+    background-color: #dec222 !important;
+}
+/* Fin del editar boton "SUSCRIPCIÓN" */
+
+/* Inicio del editar tipo de letra y color de fondo del navbar */
+#navbar-color {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: rgb(8, 8, 8) !important;
+}
+.boton-hamburguesa {
+    background-color: black !important;
+    border: 3px solid rgb(53, 53, 53) !important
+}
+.boton-hamburguesa i {
+    color: #DEB522 !important;
+}
+.boton-hamburguesa:hover {
+    background-color: rgb(3, 3, 3) !important;
+    border: 3px solid rgb(80, 80, 80) !important
+}
+.boton-hamburguesa i:hover {
+    color: #ffc800 !important;
+}
+/* Fin del editar tipo de letra y color de fondo del navbar */
+
+/* Inicio del ocultar puntuación para dispositivos menores a sm */
+.puntuacion-none {
+    background-color: rgba(0, 0, 0, 0.856);
+}
+
+.puntuacion-none:hover {
+    background-color: rgba(0, 0, 0, 0.76);
+}
+/* Fin del ocultar puntuación para dispositivos menores a sm */
+
+/* Inicio del editar boton "POCHOCLERO" */
+#pochocleros {
+    border: 3px solid black;
+    color: black;
+    background-color: #DEB522;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 900 !important;
+}
+#pochocleros:hover {
+    border: 3px solid rgb(34, 34, 34);
+    color: rgb(34, 34, 34);
+}
+@media only screen and (max-width: 330px) {
+    #pochocleros {
+        display: none;
+    }
+}
+/* Fin del editar boton "POCHOCLERO" */
+
+/* Inicio del editar fondo de pantalla y efectos al div principal */
+#principal {
+    background-image:linear-gradient(rgba(34, 32, 32, 0.685),rgb(0, 0, 0)),url(https://images8.alphacoders.com/123/1233459.jpg);
+    width: 100%;
+    height: 100%;
+    padding: 3% !important;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    padding-top: 6% !important;
+}
+/* Fin del editar fondo de pantalla y efectos al div principal */
+
+.secundario {
+    background-color: white;
+    color: black;
+}
+
+.boton-genero-movie {
+    padding: 0% !important;
+    border: 2px solid rgb(128, 126, 126) !important;
+    /* width: 10% !important;
+    height: 10% !important; */
+    border-radius: 20px !important;
+}
+
+.acerca-de>p a {
+    text-decoration: none;
+}
+.acerca-de>p a:hover {
+    text-decoration:underline;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+}
+
+/* Inicio del editar caja de comentarios */
+.user-comentario {
+    border-radius: 50% !important;
+    height: 5% !important;
+    width: 5% !important;
+}
+
+.caja-comentarios {
+    padding: 2%;
+}
+.comentario {
+    border: 1px solid black !important;
+    border-radius: 0% !important;
+    width: 90% !important;
+}
+.caja-comentarios input, .caja-comentarios textarea {
+    background-color: rgba(218, 214, 214, 0.705) !important;
+}
+.boton-comentar {
+    background-color: #DEB522 !important;
+    color:rgb(24, 24, 24) !important;
+}
+/* Fin del editar caja de comentarios */
+
+/* Color de fondo del div que contiene el trailer */
+#trailer {
+    background-color: black;
+}
+
+/* Inicio del editar los botones de puntuación */
+.puntuacion {
+    color: #DEB522;
+}
+.puntuacion-user {
+    color: green;
+}
+.puntuacion:hover {
+    color: #DEB522!important;
+    cursor: pointer;
+}
+.puntuacion-user:hover {
+    color: rgb(58, 128, 0) !important;
+    cursor: pointer;
+}
+/* Fin del editar los botones de puntuación */
+
+/* Inicio del editar reparto */
+.actor>img {
+    border-radius: 10%;
+    height: 80%;
+    width: 20%;
+}
+
+.nombre {
+    color:black;
+}
+.papel {
+    color: grey;
+}
+/* Fin del editar reparto */
+
+/* Inicio del editar los tres botones de atajo que aparecen al inicio de pagina */
+.atajos {
+    background-color: rgba(0, 0, 0, 0.555);
+}
+.atajos:hover {
+    background-color: rgba(0, 0, 0, 0.76);
+}
+.atajos>a {
+    width: 100%;
+    height: 100%;
+}
+/* Fin del editar los tres botones de atajo que aparecen al inicio de pagina */
+
+/* Inicio de editar los subtitulos y extras */
+.sub-titulo {
+    border-left: 7px #DEB522 solid;
+}
+.sub-titulo-detalles {
+    font-size: 140%;
+    color:rgb(71, 70, 70);
+}
+.sobre-pelicula>p>a {
+    text-decoration: none;
+    color: rgb(0, 0, 131);
+}
+
+.especificiaciones a {
+    text-decoration: none;
+    color: rgb(0, 0, 131);
+}
+
+.premios>p {
+    margin-bottom: 3%;
+}
+/* Fin de editar los subtitulos y extras */
+
+/* Inicio del boton PARAMOUNT*/
+.ver-pelicula>a {
+    border-radius: 20%;
+    width: 25%;
+}
+.ver-pelicula>a>img {
+    border-radius: 15%;
+    /* width: 25%; */
+}
+.ver-pelicula>a:hover {
+    /* border-radius: 20%; */
+    border: 5px solid rgb(0, 107, 139) !important;
+} 
+.ver-pelicula>p {
+    text-shadow: 2px 2px 5px rgb(0, 183, 255);
+}
+/* Fin del boton PARAMOUNT */
+
+/* Inicio footer */
+.hover-links a {
+    color: rgb(134, 134, 134) !important;
+}
+.hover-links a:hover {
+    color: white !important;
+}
+
+footer {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: rgb(8, 8, 8) !important;
+}
+
+@media only screen and (max-width: 767px) {
+    #redes, #info-footer {
+        padding-left: 10% !important;
+        padding-top: 3% !important;
+    }
+}
+@media only screen and (max-width: 575px) {
+    #redes, #info-footer {
+        padding-left: 9% !important;
+    }
+}
+.copyright {
+    background-color: black !important;
+}
+/* Fin footer */
+
+/* Inicio de las media queries para ajustar el contenido de la pagina en función del tamaño del dispositivo */
+@media only screen and (max-width: 991px) {
+    #opcion-intermedia {
+        padding: 0% !important;
+        padding-left: 0.5% !important;
+        padding-right: 0.5% !important;
+    }
+
+    #opcion-inicial, #opcion-intermedia, #opcion-final {
+        padding-top: 0.5% !important;
+    }
+
+    #principal {
+        padding-top: 6% !important;
+    }
+
+    .user-comentario {
+        border-radius: 50% !important;
+        height: 10% !important;
+        width: 10% !important;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #principal {
+        padding-top: 8% !important;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #principal {
+        padding-top: 9% !important;
+    }
+}
+@media only screen and (max-width: 430px) {
+    #principal {
+        padding-top: 11% !important;
+    }
+}
+@media only screen and (max-width: 400px) {
+    main {
+        padding-top: 3% !important;
+    }
+}
+@media only screen and (max-width: 380px) {
+    main {
+        padding-top: 4% !important;
+    }
+}
+@media only screen and (max-width: 321px) {
+    main {
+        padding-top: 20% !important;
+    }
+}
+@media only screen and (max-width: 292px) {
+    main {
+        padding-top: 21% !important;
+    }
+
+    .user-comentario {
+        border-radius: 50% !important;
+        height: 18% !important;
+        width: 18% !important;
+    }
+}
+@media only screen and (max-width: 275px) {
+    main {
+        padding-top: 25% !important;
+    }
+}
+@media only screen and (max-width: 265px) {
+    main {
+        padding-top: 15% !important;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    #opcion-intermedia {
+        padding-left: 0% !important;
+        padding-right: 0% !important;
+    }
+    
+    .taquilla>.row>div {
+        padding: 0% !important;
+    }
+
+    #principal {
+        padding-top: 10% !important;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .primer-fila {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+    }
+    .primer-fila>div {
+        width: 100%;
+        height: 33.3%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #principal {
+        padding-top: 12% !important;
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+        padding-bottom: 5% !important;
+    }
+} 
+
+@media only screen and (min-width: 1918px) {
+    #principal {
+        padding-top: 4% !important;
+    }
+}
+
+@media only screen and (max-width: 392px) {
+    .actor img {
+        max-height: 70.39px;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .actor img {
+        max-height: 70.39px;
+    }
+}
+
+@media only screen and (max-width: 230px) {
+    .actor img {
+        max-height: 70.39px;
+        min-width: 50px;
+    }
+}
+@media only screen and (max-width: 250px) {
+    .img-none img {
+        display: none;
+    }
+    .puntuaciones-none {
+        width: 100% !important;
+    }
+}
+/* Fin de las media queries para ajustar el contenido de la pagina en función del tamaño del dispositivo */
