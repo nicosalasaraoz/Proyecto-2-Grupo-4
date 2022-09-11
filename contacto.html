@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="contacto.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&family=Raleway&family=Roboto:wght@400;900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d4c04a1274.js" crossorigin="anonymous"></script>
+</head>
+
+<!-- La clase de body permite ocupar minimamente el 100% de la pantalla asi ajustamos el footer al pie de pagina mediante
+un contenedor flexible -->
+
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <!-- Inicio de navbar -->
+        <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="navbar-color">
+            <div class="container-fluid">
+              <a href="/index.html">
+                <img class="rounded-circle" src="/img/LOGO.jpg" width="50" height="50" alt="logo">
+              </a>
+              <div class="letra text-light mx-3">
+                <a class="btn" href="/index.html" id="">
+                  <p class="p-0 m-0"></p>
+                </a>
+              </div>
+              <button class="navbar-toggler boton-hamburguesa" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-film"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="contacto.html">SIGN UP</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="nosotros.html">CONTACTO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="login.html">SIGN IN</a>
+                  </li>
+                </ul>
+              </div>
+          </nav>
+        <!-- Inicio del boton modal de "Suscribción" -->
+        <div class="modal" id="suscripcion" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content modificar-modal">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center text-light"> <svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+                            </svg> Suscríbite</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Nombre y Apellido</label>
+                                <input type="name" class="form-control" id="text" required placeholder="Robert De Niro">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" required  placeholder="nombre@email.com">
+                                <div id="emailHelp" class="form-text">
+                                    Nunca compartiremos tu correo electrónico con nadie más.</div>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Recibir Notificaciones</label>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="sumbit" class="btn btn-dark">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin del boton modal de "Suscribción" -->
+
+        <!-- Fin de navbar -->
+    </header>
+
+    <main>
+        <div class="container-fluid h-100 d-flex flex-column justify-content-center align-items-center">
+            <div class="container-fluid m-0 p-0 d-flex justify-content-center" id="principal-contacto">
+                <div class="row justify-content-between w-100" id="contenido-contacto">
+
+                    <!-- Inicio del iframe del google maps -->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-7 p-0">
+                        <div class="container-fluid m-0 p-0 h-100 mapa">
+                            <iframe class="p-2" width="100%" height="100%" heighframeborder="0" scrolling="no"
+                                marginheight="0" marginwidth="0"
+                                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Les%20Rambles,%201%20Barcelona,%20Spain+(Mi%20nombre%20de%20egocios)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                                    href="https://www.gps.ie/car-satnav-gps/">GPS car tracker</a></iframe>
+                        </div>
+                    </div>
+                    <!-- Fin del iframe del google maps -->
+
+                    <!-- Inicio del formulario de contacto -->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-5 p-4 d-flex flex-column">
+                        <div class="container-fluid p-0 m-0 text-center logo">
+                            <img class="rounded-circle" src="/img/logo.jpeg" alt="logo.png">
+                        </div>
+                        <h3>Contacto</h3>
+                        <form action="https://formspree.io/f/meqnygbn" method="post">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                                <input type="email" class="form-control" name="exampleFormControlInput1"
+                                    id="exampleFormControlInput1" placeholder="nombre@email.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre y Apellidos (No obligatorio)</label>
+                                <input type="name" name="nombre" placeholder="Al Pacino" class="form-control"
+                                    id="nombre">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                                <textarea class="form-control mh-100" name="exampleFormControlTextarea1"
+                                    id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn boton-enviar">Enviar</button>
+                        </form>
+                        <div class="container-fluid d-flex justify-content-center h-100 align-items-end">
+                            <h6>O llama al <i class="fa-solid fa-phone px-1"></i> 1234567890</h6>
+                        </div>
+                    </div>
+                    <!-- Fin del formulario de contacto -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Inicio del footer -->
+    <footer class="mt-auto bg-secondary">
+        <div class="row m-0 mt-4 p-0 pt-4 text-white w-100 hover-links">
+          <div class="col-12 col-sm-12 col-md-4 p-0 d-flex flex-column align-items-center">
+            <a href="./index.html" class="m-0 p-0 d-flex flex-column align-items-center text-decoration-none">
+              <img class="rounded-circle" src="/img/LOGO.jpg" width="100" height="100" alt="logo">
+              <h5 class="my-2">GAMERS ©</h5>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 p-0" id="info-footer">
+            <p class="h5 mb-3">Información</p>
+            <div class="mb-2">
+              <a class="text-dark text-decoration-none" href="/error_404.html">Terminos & condiciones</a>
+            </div>
+            <div class="mb-2">
+              <a class="text-dark text-decoration-none" href="/error_404.html">
+                Política de privacidad</a>
+            </div>
+            <div class="mb-2">
+              <a class="text-dark text-decoration-none" href="/contacto.html">Contacto</a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 p-0" id="redes">
+            <p class="h5 mb-3">Redes sociales</p>
+            <div class="mb-2">
+              <i class="fa-brands fa-facebook"></i>
+              <a class="text-dark text-decoration-none" href="https://www.facebook.com/">Facebook</a>
+            </div>
+            <div class="mb-2">
+              <i class="fa-brands fa-github"></i>
+              <a class="text-dark text-decoration-none"
+                href="https://github.com/nicosalasaraoz/proyecto_1_grupo2">GitHub</a>
+            </div>
+            <div class="mb-2">
+              <i class="fa-brands fa-linkedin"></i>
+              <a class="text-dark text-decoration-none" href="https://www.linkedin.com/">Linkedin</a>
+            </div>
+          </div>
+    
+          <div class="col-xs-12 p-0 mt-4 copyright">
+            <p class="m-0 my-2 text white text-center">Copyright - GAMERS © 2022</p>
+          </div>
+        </div>
+      </footer>
+    <!-- Fin del footer -->
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="contacto.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
