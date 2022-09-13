@@ -28,30 +28,6 @@ main {
 
 /* Fin del editar navbar */
 
-/* Inicio de editar boton "Pochocleros" */
-#pochocleros {
-    border: 3px solid black;
-    color: black;
-    background-color: #DEB522;
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 900 !important;
-}
-#pochocleros:hover {
-    border: 3px solid rgb(34, 34, 34);
-    color: rgb(34, 34, 34);
-}
-@media only screen and (max-width: 330px) {
-    #pochocleros {
-        display: none;
-    }
-}
-/* Fin de editar boton "Pochocleros" */
-
-.boton-principal:hover {
-    border: 2px solid black !important;
-    color: rgb(20, 20, 20) !important;  
-}
-
 /* inicio footer */
 footer {
     font-family: 'IBM Plex Sans', sans-serif;
@@ -79,15 +55,3 @@ footer {
     color: white !important;
 }
 /* fin footer */
-
-@media only screen and (min-width: 1918px) {
-    .noticias img {
-        height: 100% !important;
-    }
-    .noticias p {
-        font-size: 15px;
-    }
-    .noticias h6 {
-        font-size: 25px;
-    }  
-}
