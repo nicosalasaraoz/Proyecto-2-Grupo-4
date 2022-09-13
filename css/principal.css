@@ -47,20 +47,15 @@ main {
     background-color: gray;
     font-family: 'IBM Plex Sans', sans-serif;
 }
-.boton-hamburguesa {
-    background-color: black !important;
+.ham-toggler {
+    background-color: white !important;
     border: 3px solid rgb(53, 53, 53) !important
 }
-.boton-hamburguesa i {
-    color: #DEB522 !important;
-}
-.boton-hamburguesa:hover {
-    background-color: rgb(3, 3, 3) !important;
+.ham-toggler:hover {
+    background-color: rgb(175, 174, 189) !important;
     border: 3px solid rgb(80, 80, 80) !important
 }
-.boton-hamburguesa i:hover {
-    color: #ffc800 !important;
-}
+
 /* Fin del editar navbar */
 
 /* Editar titulos de cada sección de la pagina */
