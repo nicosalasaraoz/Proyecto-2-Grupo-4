@@ -2,36 +2,6 @@
 body {
     background-color: rgb(35, 32, 39) !important;
 }
-
-/* Inicio de editar boton "Ver mas" */
-.btn-ver-mas {
-    background-color: rgba(8, 8, 8) !important;
-    border-radius: 0% !important;
-}
-.btn-ver-mas:hover {
-    background-color: black !important;
-    color: #DEB522 !important;
-}
-/* Fin de editar boton "Ver mas" */
-
-/* Inicio de modificar modal suscripción*/
-.modificar-modal{
-    background-color: rgba(8, 8, 8, 0.904) !important;
-}
-.modificar-modal input {
-    background-color: rgba(8, 8, 8, 0.904) !important;
-    color: rgb(194, 190, 190) !important;
-}
-
-.modificar-modal>.modal-body button, .modificar-modal>.modal-footer button {
-    border: 3px solid black;
-    color: black;
-    background-color: #DEB522;
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 900 !important;
-}
-/* Fin de modificar modal suscripción*/
-
 /* Cambiar tipo de letra solo en main */
 main {
     font-family: 'Roboto', sans-serif;
@@ -58,70 +28,6 @@ main {
 
 /* Fin del editar navbar */
 
-/* Editar titulos de cada sección de la pagina */
-.titulos {
-    color: #DEB522;
-    font-family: 'Roboto', sans-serif;
-}
-
-/* Inicio de editar actores */
-.actor:hover {
-    background-color: rgb(8, 8, 8) !important;
-}
-.actor h5 {
-    font-family: 'IBM Plex Sans', sans-serif;
-    
-}
-/* Fin de editar actores */
-
-/* Inicio de editar el boton categorias de peliculas */
-.categorias a {
-    font-family: 'Roboto', sans-serif;
-    border-radius: 0% !important;
-    background-color: rgb(8, 8, 8) !important;
-}
-.categorias>div {
-    padding: 0.3% !important;
-}
-
-.boton {
-    border: 3px solid black !important;
-    color: black !important;
-    background-color: #DEB522 !important;
-    font-family: 'IBM Plex Sans', sans-serif !important;
-}
-.boton:hover {
-    border: 3px solid rgb(34, 34, 34) !important;
-    color: rgb(34, 34, 34) !important;
-}
-/* Inicio de editar el boton categorias de peliculas */
-
-/* Editar trailer */
-video {
-    width: 100%;
-    height: 100%;
-}
-
-.cat {
-    height: 90px !important;
-}
-
-/* Inicio de editar noticias */
-.noticias {
-    background-color: rgb(8, 8, 8) !important;
-    text-decoration: none;
-    color: white;
-}
-.noticias img {
-    height: 150px !important;
-}
-
-.noticias p {
-    font-size: 70%;
-    margin: 0%;
-}
-/* Fin de editar noticias */
-
 /* Inicio de editar boton "Pochocleros" */
 #pochocleros {
     border: 3px solid black;
@@ -145,59 +51,6 @@ video {
     border: 2px solid black !important;
     color: rgb(20, 20, 20) !important;  
 }
-
-/* Detalles extras de los subtitulos y titulos de la pagina */
-.prox-titulo {
-    color: white !important;
-}
-.prox-p {
-    color: gray;
-}
-.prox-p:hover {
-    color: #DEB522;;
-}
-
-.buscar-serie-pelicula input {
-    background-color: rgba(8, 8, 8, 0.562) !important;
-    color: white !important;
-}
-
-/* Inicio de ajustar la categoria de pelis y series, y de proximamente */
-.peli-serie:hover {
-    background-color: rgb(10, 10, 10);
-}
-.peli-serie>p {
-    background-color: rgb(8, 8, 8);
-    width: 100%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-
-.prox-peli-serie>p {
-    background-color: rgb(8, 8, 8);
-    width: 100%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-}
-/* Fin de ajustar la categoria de pelis y series, y de proximamente */
-
-/*Inicio modificar botones "avanzar" y "volver" de la paginiación*/
-@media only screen and (min-width: 311px) {
-    .volver-avanzar-alt {
-        display: none !important;
-    }
-}
-
-@media only screen and (max-width: 310px) {
-    .volver-avanzar {
-        display: none !important;
-    }
-    .volver-avanzar-alt {
-        display: block;
-    }
-}
-
-/* Fin modificar botones "avanzar" y "volver" de la paginiación*/
 
 /* inicio footer */
 footer {
