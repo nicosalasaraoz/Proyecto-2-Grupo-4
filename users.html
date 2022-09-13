@@ -25,7 +25,7 @@
   <header class="pt-4">
 
     <!-- Inicio del navbar -->
-    <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="navbar-color">
+    <nav class="navbar  bg-secondary fixed-top" id="navbar-color">
       <div class="container-fluid">
         <a href="/index.html">
           <img class="rounded-circle" src="/img/LOGO.jpg" width="50" height="50" alt="logo">
@@ -57,14 +57,10 @@
 
        <!-- Fin del navbar -->
     <!-- Search button -->
-    <nav class="navbar bg-white ms-auto mt-3">
-      <div class="container-fluid">
-        <form class="d-flex ms-auto" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-black" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
+    <div class="container-fluid my-3">
+		  <input class="form-control p-3 " id="search" placeholder="Type to search ..." autofocus
+			  oninput="searchFilter()">
+      </div>    
   </header>
   <main>
     <!-- Pagina Principal -->
@@ -78,7 +74,8 @@
     <h3 class="text-white my-4 ms-3">NOVEDADES</h3>
     
     <div class="carousel-inner container-fluid">
-      <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6 g-4">
+      <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3  row-cols-xl-6 g-4">
+        <!-- product1-->
         <div class="col">
           <div class="card h-100">
             <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/292030/header_292x136.jpg?t=1659619680" class="card-img-top" alt="...">
@@ -91,6 +88,7 @@
             </div>
           </div>
         </div>
+                <!-- product2-->
         <div class="col">
           <div class="card h-100">
             <img src="https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg?t=1641233427" class="card-img-top" alt="...">
@@ -103,6 +101,7 @@
             </div>
           </div>
         </div>
+                <!-- product3-->
         <div class="col">
           <div class="card h-100">
             <img src="https://cdn.akamai.steamstatic.com/steam/apps/1401590/header.jpg?t=1662669751" class="card-img-top" alt="...">
@@ -115,6 +114,7 @@
             </div>
           </div>
         </div>
+                <!-- product4-->
         <div class="col">
           <div class="card h-100">
             <img src="https://cdn.akamai.steamstatic.com/steam/apps/1938090/header.jpg?t=1662612400" class="card-img-top" alt="...">
@@ -127,6 +127,7 @@
             </div>
           </div>
         </div>
+                <!-- product5-->
         <div class="col">
           <div class="card h-100">
             <img src="https://cdn.akamai.steamstatic.com/steam/apps/1938090/header.jpg?t=1662612400" class="card-img-top" alt="...">
@@ -138,7 +139,9 @@
               <a class="btn btn-danger ms-auto" href=" ">Ver más</a>
             </div>
           </div>
-        </div><div class="col">
+        </div>
+                <!-- product6-->  
+        <div class="col">
           <div class="card h-100">
             <img src="https://cdn.akamai.steamstatic.com/steam/apps/1938090/header.jpg?t=1662612400" class="card-img-top" alt="...">
             <div class="card-body">
@@ -156,7 +159,7 @@
     <!-- carrousel 2 -->
       <h3 class="text-white my-4 ms-3">ACCION</h3>
       <div class="carousel-inner container-fluid">
-        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6 g-4">
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-6 g-4">
           <div class="col">
             <div class="card h-100">
               <img src="https://cdn.akamai.steamstatic.com/steam/apps/1938090/header.jpg?t=1662612400" class="card-img-top" alt="...">
@@ -231,7 +234,7 @@
 
     <h3 class="text-white my-4 ms-3">SUSPENSO</h3>
     <div class="carousel-inner container-fluid">
-      <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6 g-4">
+      <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-6 g-4">
         <div class="col">
           <div class="card h-100">
             <img src="https://cdn.akamai.steamstatic.com/steam/apps/1938090/header.jpg?t=1662612400" class="card-img-top" alt="...">
@@ -309,7 +312,7 @@
     <!-- fin carrousel -->
       <h3 class="text-white m-4">DEPORTES</h3>
       <div class="carousel-inner container-fluid mb-5">
-        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6 g-4">
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-6 g-4">
           <div class="col">
             <div class="card h-100">
               <img src="https://cdn.akamai.steamstatic.com/steam/apps/1938090/header.jpg?t=1662612400" class="card-img-top" alt="...">
@@ -430,6 +433,7 @@
       </div>
     </div>
   </footer>
+  <script src="/users.js"></script>
 </body>
 
 </html>
