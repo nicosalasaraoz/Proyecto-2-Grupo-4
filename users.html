@@ -35,10 +35,10 @@
             <p class="p-0 m-0"></p>
           </a>
         </div>
-        <button class="navbar-toggler boton-hamburguesa" type="button" data-bs-toggle="collapse"
+        <button class="navbar-toggler ham-toggler" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
           aria-label="Toggle navigation">
-          <i class="fa-solid fa-film"></i>
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -46,25 +46,20 @@
               <a class="nav-link active text-light" aria-current="page" href="contacto.html">SIGN UP</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="nosotros.html">CONTACT</a>
+              <a class="nav-link text-light" href="nosotros.html">CONTACTO</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-light" href="index.html">LOG OUT</a>
             </li>
           </ul>
         </div>
-    </nav>
-
-       <!-- Fin del navbar -->
-    <!-- Search button -->
-    <nav class="navbar bg-white ms-auto mt-3">
-      <div class="container-fluid">
-        <form class="d-flex ms-auto" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-black" type="submit">Search</button>
-        </form>
       </div>
-    </nav>
+    </nav>       <!-- Fin del navbar -->
+    <!-- Search button -->
+    <div class="container-fluid my-3">
+		  <input class="form-control p-3 " id="search" placeholder="Type to search ..." autofocus
+			  oninput="searchFilter()">
+      </div>    
   </header>
   <main>
     <!-- Pagina Principal -->
@@ -78,7 +73,8 @@
     <h3 class="text-white my-4 ms-3">NOVEDADES</h3>
     
     <div class="carousel-inner container-fluid">
-      <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6 g-4">
+      <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3  row-cols-xl-6 g-4">
+        <!-- product1-->
         <div class="col">
           <div class="card h-100">
             <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/292030/header_292x136.jpg?t=1659619680" class="card-img-top" alt="...">
@@ -91,6 +87,7 @@
             </div>
           </div>
         </div>
+                <!-- product2-->
         <div class="col">
           <div class="card h-100">
             <img src="https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg?t=1641233427" class="card-img-top" alt="...">
@@ -103,6 +100,7 @@
             </div>
           </div>
         </div>
+                <!-- product3-->
         <div class="col">
           <div class="card h-100">
             <img src="https://cdn.akamai.steamstatic.com/steam/apps/1401590/header.jpg?t=1662669751" class="card-img-top" alt="...">
@@ -115,6 +113,7 @@
             </div>
           </div>
         </div>
+                <!-- product4-->
         <div class="col">
           <div class="card h-100">
             <img src="https://cdn.akamai.steamstatic.com/steam/apps/1938090/header.jpg?t=1662612400" class="card-img-top" alt="...">
@@ -127,6 +126,7 @@
             </div>
           </div>
         </div>
+                <!-- product5-->
         <div class="col">
           <div class="card h-100">
             <img src="https://cdn.akamai.steamstatic.com/steam/apps/1938090/header.jpg?t=1662612400" class="card-img-top" alt="...">
@@ -138,7 +138,9 @@
               <a class="btn btn-danger ms-auto" href=" ">Ver más</a>
             </div>
           </div>
-        </div><div class="col">
+        </div>
+                <!-- product6-->  
+        <div class="col">
           <div class="card h-100">
             <img src="https://cdn.akamai.steamstatic.com/steam/apps/1938090/header.jpg?t=1662612400" class="card-img-top" alt="...">
             <div class="card-body">
@@ -156,7 +158,7 @@
     <!-- carrousel 2 -->
       <h3 class="text-white my-4 ms-3">ACCION</h3>
       <div class="carousel-inner container-fluid">
-        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6 g-4">
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-6 g-4">
           <div class="col">
             <div class="card h-100">
               <img src="https://cdn.akamai.steamstatic.com/steam/apps/1938090/header.jpg?t=1662612400" class="card-img-top" alt="...">
@@ -231,7 +233,7 @@
 
     <h3 class="text-white my-4 ms-3">SUSPENSO</h3>
     <div class="carousel-inner container-fluid">
-      <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6 g-4">
+      <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-6 g-4">
         <div class="col">
           <div class="card h-100">
             <img src="https://cdn.akamai.steamstatic.com/steam/apps/1938090/header.jpg?t=1662612400" class="card-img-top" alt="...">
@@ -309,7 +311,7 @@
     <!-- fin carrousel -->
       <h3 class="text-white m-4">DEPORTES</h3>
       <div class="carousel-inner container-fluid mb-5">
-        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6 g-4">
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-6 g-4">
           <div class="col">
             <div class="card h-100">
               <img src="https://cdn.akamai.steamstatic.com/steam/apps/1938090/header.jpg?t=1662612400" class="card-img-top" alt="...">
@@ -430,6 +432,7 @@
       </div>
     </div>
   </footer>
+  <script src="/index.js/users.js"></script>
 </body>
 
 </html>
