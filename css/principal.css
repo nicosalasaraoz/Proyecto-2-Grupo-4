@@ -14,6 +14,7 @@ header {
 #navbar-color {
     background-color: gray;
     font-family: 'IBM Plex Sans', sans-serif;
+    font-size: larger;
 }
 .ham-toggler {
     background-color: white !important;
@@ -45,11 +46,14 @@ footer {
 }
 .copyright {
     background-color: black !important;
+    font-size: larger;
 }
 .hover-links a {
     color: white !important;
+    font-size: larger;
 }
 .hover-links a:hover {
     color: black !important;
+    font-size: larger;
 }
 /* fin footer */

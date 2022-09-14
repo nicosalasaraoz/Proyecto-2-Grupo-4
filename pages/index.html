@@ -19,539 +19,310 @@
     crossorigin="anonymous"></script>
 </head>
 
-<!-- body ajustado a pantalla -->
+<!-- body fixed to screen -->
 
-<body class="d-flex flex-column min-vh-100 mt-5">
-  <header class="pt-4">
-
-    <!-- Inicio del navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark fixed-top" id="navbar-color">
-      <div class="container-fluid">
-        <a href="/index.html">
-          <img class="rounded-circle" src="" width="50" height="50" alt="logo">
+<body class="d-flex flex-column min-vh-100">
+  <header class="">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="navbar-color">
+      <div class="container-fluid hover-links">
+        <a href="./index.html" class="m-0 p-0 d-flex flex-column align-items-center text-decoration-none">
+          <img class="rounded-circle" src="/img/LOGO.jpg" width="75" height="75" alt="logo">
+          <h5 class="my-2">GAMERS ©</h5>
         </a>
         <div class="letra text-light mx-3">
-          <a class="btn" href="/index.html" id="pochocleros">
+          <a class="btn" href="/index.html" id="">
             <p class="p-0 m-0"></p>
           </a>
         </div>
-        <button class="navbar-toggler boton-hamburguesa" type="button" data-bs-toggle="collapse"
+        <button class="navbar-toggler ham-toggler" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
           aria-label="Toggle navigation">
-          <i class="fa-solid fa-film"></i>
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active text-light" aria-current="page" href="contacto.html">CONTACTO</a>
+              <a class="nav-link active text-light" aria-current="page" href="contacto.html">SIGN UP</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="nosotros.html">NOSOTROS</a>
+              <a class="nav-link active text-light" href="login.html">LOG IN</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="galeria.html">GALERÍA</a>
+              <a class="nav-link active text-light" href="nosotros.html">CONTACT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="login.html">LOGIN</a>
+              <a class="nav-link active text-light" href="nosotros.html">ABOUT US</a>
             </li>
           </ul>
-          <div>
-            <button type="button" class="btn" id="suscripcion-boton" data-bs-toggle="modal"
-              data-bs-target="#suscripcion">
-              Suscripción <i class="fa-regular fa-bell"></i>
-            </button>
-          </div>
-        </div>
-    </nav>
-
-    <!-- Inicio del modal de "SUSCRIPCION" -->
-    <div class="modal" id="suscripcion" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content modificar-modal">
-          <div class="modal-header">
-            <h5 class="modal-title text-center text-light"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
-                <path
-                  d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
-              </svg> Suscríbite</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Nombre y Apellido</label>
-                <input type="name" class="form-control" id="text" required placeholder="Robert De Niro">
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required
-                  placeholder="nombre@email.com">
-                <div id="emailHelp" class="form-text">
-                  Nunca compartiremos tu correo electrónico con nadie más.</div>
-              </div>
-              <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Recibir Notificaciones</label>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                <button type="sumbit" class="btn btn-dark">Enviar</button>
-              </div>
-            </form>
-          </div>
         </div>
       </div>
-    </div>
-    <!-- Fin del modal de "SUSCRIPCION" -->
-
-    <!-- Fin del navbar -->
+    </nav>
+    <!-- End navbar -->
   </header>
 
-  <!-- Pagina Principal -->
-  <!-- Hero -->
+
+  <!-- Main Page -->
   <div class="container-fluid w-100 m-0 d-flex justify-content-center">
-    <div class="row mt-4 w-100">
+    <div class="row mt-5 w-100">
       <div class="col-12 col-md-12">
-        <!-- carousel -->
-        <div id="carouselExampleCaptions" class="carousel slide data-bs-ride=">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-          </div>
-          <h3 class="titulos">Estrenos del mes</h3>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="img/stranger-carousel.jpg" alt="" class="w-100 h-100">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>STRANGER THINGS 4</h5>
-              </div>
+        <!-- horizontal card -->
+        <div class="card mb-2 p-4" style="max-width: w-100;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="https://cdn.akamai.steamstatic.com/steam/apps/1817070/header.jpg?t=1660316394"
+                class="img-fluid w-100 rounded-start" alt="...">
             </div>
-            <div class="carousel-item">
-              <img src="https://images3.alphacoders.com/124/thumb-1920-1241167.png" alt="..." class="w-100 h-100">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>THOR: LOVE AND THUNDER</h5>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="https://i.pinimg.com/originals/09/38/1a/09381aaa0454aae6352991cf4e9bacd0.jpg"
-                class="w-100 h-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>MINIONS: THE RISE OF GRU</h5>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
       </div>
     </div>
   </div>
-  <!-- fin Hero -->
-  <!-- 2 columnas -->
-  <main>
-    <div class="container-fluid d-flex justify-content-center align-items-center mx-0 my-3">
-      <div class="row align-items-start w-100">
-        <!-- columna 1 -->
-        <div class="col-12 col-md-7">
-          <div class="container p-0">
-            <h3 class="titulos">Ultimas Busquedas</h3>
-            <div class="row m-0">
-              <div class="row m-0 row-cols-1 row-cols-md-3 g-3 mt-0">
-                <div class="col">
-                  <div class="card h-100 border-0">
-                    <img src="img/the-batman.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">THE BATMAN</h5>
-                      <p class="card-text">Cuando el Acertijo, un sádico asesino en serie, comienza a asesinar a las
-                        principales figuras políticas de Gotham... </p>
-                    </div>
-                    <div class="card-footer p-0">
-                      <a href="/entrada.html" class="btn btn-ver-mas py-3 w-100 h-100">Ver mas detalles</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100 border-0">
-                    <img src="img/top-gun.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">TOP GUN MAVERICK</h5>
-                      <p class="card-text">Después de más de treinta años de servicio como uno de los mejores aviadores
-                        de la Armada, Pete Mitchell está...</p>
-                    </div>
-                    <div class="card-footer p-0">
-                      <a href="/entrada2.html" class="btn btn-ver-mas py-3 w-100 h-100">Ver mas detalles</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100 border-0">
-                    <img src="img/dr-strange.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">DOCTOR STRANGE IN THE MULTIVERSE OF MADNESS</h5>
-                      <p class="card-text">Después de los eventos de Spider-Man No Way Home, el Doctor Strange, sin
-                        darse cuenta...</p>
-                    </div>
-                    <div class="card-footer p-0">
-                      <a href="entrada3.html" class="btn btn-ver-mas py-3 w-100 h-100">Ver mas detalles</a>
-                    </div>
-                  </div>
-                </div>
+  <!-- carrousel 1 -->
+  <div id="carouselExampleControls" class="carousel slide mt-4" data-bs-ride="carousel">
+    <h3 class="text-white">NOVEDADES</h3>
+    <div class="carousel-inner container-fluid">
+      <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://cdn.akamai.steamstatic.com/steam/apps/1938090/header.jpg?t=1662612400"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg?t=1641233427" class="card-img-top"
+              alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a short card.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://cdn.akamai.steamstatic.com/steam/apps/1401590/header.jpg?t=1662669751"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://cdn.akamai.steamstatic.com/steam/apps/1938090/header.jpg?t=1662612400"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://cdn.akamai.steamstatic.com/steam/apps/1938090/header.jpg?t=1662612400"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://cdn.akamai.steamstatic.com/steam/apps/1938090/header.jpg?t=1662612400"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="carousel-item active">
+        <img src="..." class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+      </div>
+    </div> -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- fin carrousel -->
+    <!-- carrousel 2 -->
+    <div id="carouselExampleControls" class="carousel slide mt-4" data-bs-ride="carousel">
+      <h3 class="text-white">ACCION</h3>
+      <div class="carousel-inner container-fluid">
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://cdn.akamai.steamstatic.com/steam/apps/1938090/header.jpg?t=1662612400"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
               </div>
             </div>
           </div>
-          <!-- Inicio de paginacion -->
-          <nav aria-label="..." class="my-3">
-            <ul class="pagination justify-content-center">
-              <li class="page-item">
-                <!-- <a href="page-link boton d-none volver-avanzar"><i class="fa-solid fa-angle-left"></i></a> -->
-                <a class="page-link boton volver-avanzar" href="/error_404.html">Anterior</a>
-                <a class="page-link boton volver-avanzar-alt" href="/error_404.html"><i
-                    class="fa-solid fa-angle-left"></i></a>
-              </li>
-              <li class="page-item"><a class="page-link boton" href="/error_404.html">1</a></li>
-              <li class="page-item active" aria-current="page">
-                <a class="page-link boton" href="/error_404.html">2</a>
-              </li>
-              <li class="page-item"><a class="page-link boton" href="/error_404.html">3</a></li>
-              <li class="page-item">
-                <!-- <a href="page-link boton d-none volver-avanzar"></a> -->
-                <a class="page-link boton volver-avanzar" href="/error_404.html">Siguiente</a>
-                <a class="page-link boton volver-avanzar-alt" href="/error_404.html"><i
-                    class="fa-solid fa-angle-right"></i></a>
-              </li>
-            </ul>
-          </nav>
-          <!-- fin de paginacion -->
-        </div>
-        <!-- columna 2 -->
-        <div class="col-12 col-sm-12 col-md-5 d-flex flex-column">
-          <!-- Area de busqueda -->
-          <div class="container-fluid m-0 p-0 buscar-serie-pelicula">
-            <h3 class="titulos">Busca tu serie o pelicula</h3>
-            <form class="d-flex mt-2" role="search">
-              <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
-              <a class="btn boton" href="/error_404.html">Buscar</a>
-            </form>
-          </div>
-          <!-- Fin Area de busqueda -->
-          <!-- Lista de categorias de entrada al blog -->
-          <div class="container-fluid m-0 p-0 d-flex cat justify-content-center">
-            <div class="row w-100 pt-1 categorias">
-              <div class="col col-md-4 p-0 m-0 d-flex">
-                <a class="btn w-100 h-100 d-flex justify-content-center align-items-center"
-                  href="error_404.html">PELICULAS</a>
-              </div>
-              <div class="col col-md-4 p-0 m-0 d-flex">
-                <a class="btn w-100 h-100 d-flex justify-content-center align-items-center"
-                  href="/error_404.html">SERIES</a>
-              </div>
-              <div class="col col-md-4 p-0 m-0 d-flex">
-                <a class="btn w-100 h-100 d-flex justify-content-center align-items-center"
-                  href="/error_404.html">RECOMENDADOS</a>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg?t=1641233427" class="card-img-top"
+                alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a short card.</p>
               </div>
             </div>
           </div>
-          <!-- Fin de lista de categorias de entrada al blog -->
-          <!-- Area de publicidad -->
-          <h3 class="titulos pt-2 mt-5 d-none d-sm-block">Plataformas de Streaming</h3>
-          <section class="container-fluid p-0 d-none d-sm-block mb-5">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="img/netflix.png" class="d-block w-100 h-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="img/Disney-Plus.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="img/hbo.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="img/primevideo.jpg" class="d-block w-100" alt="...">
-                </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://cdn.akamai.steamstatic.com/steam/apps/1401590/header.jpg?t=1662669751"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                  content.</p>
               </div>
             </div>
-          </section>
-          <!-- Fin de Area de publicidad -->
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid pt-3">
-      <h3 class="titulos">Qué ver</h3>
-      <div class="row pt-2">
-        <h4>Selecciones populares</h4>
-        <div
-          class="col-6 col-sm-4 col-md-3 col-lg-2 px-3 pt-2 pt-md-0 peli-serie d-flex flex-column text-center align-items-center">
-          <img class="img-fluid" src="https://pics.filmaffinity.com/Top_Gun_Maverick-733802541-large.jpg" alt="">
-          <p>Top Gun Maverick</p>
-        </div>
-        <div
-          class="col-6 col-sm-4 col-md-3 col-lg-2 px-3 pt-2 pt-md-0 peli-serie d-flex flex-column text-center align-items-center">
-          <img class="img-fluid" src="img/Iron_Man_1_Portada.jpg" alt="">
-          <p>Iron Man 1</p>
-        </div>
-        <div
-          class="col-6 col-sm-4 col-md-3 col-lg-2 px-3 pt-2 pt-md-0 peli-serie d-flex flex-column text-center align-items-center">
-          <img class="img-fluid" src="img/avengers.jpg" alt="">
-          <p>Avengers Infinity War</p>
-        </div>
-        <div
-          class="col-6 col-sm-4 col-md-3 col-lg-2 px-3 pt-2 pt-md-0 peli-serie d-flex flex-column text-center align-items-center">
-          <img class="img-fluid" src="img/4aa709fb827464c325ee3c63f07b8a6c.png" alt="">
-          <p>Maleficent</p>
-        </div>
-        <div
-          class="col-6 col-sm-4 col-md-3 col-lg-2 px-3 pt-2 pt-md-0 peli-serie d-flex flex-column text-center align-items-center">
-          <img class="img-fluid" src="img/Stranger.jpg" alt="">
-          <p>Stranger Things</p>
-        </div>
-        <div
-          class="col-6 col-sm-4 col-md-3 col-lg-2 px-3 pt-2 pt-md-0 peli-serie d-flex flex-column text-center align-items-center">
-          <img class="img-fluid" src="img/vikings.jpg" alt="">
-          <p>Vikings</p>
-        </div>
-      </div>
-      <div class="row pt-2">
-        <h4>Favoritos de los usuarios</h4>
-        <div
-          class="col-6 col-sm-4 col-md-3 col-lg-2 px-3 pt-2 pt-md-0 peli-serie d-flex flex-column text-center align-items-center">
-          <img class="img-fluid"
-            src="https://m.media-amazon.com/images/M/MV5BYjI3NDg0ZTEtMDEwYS00YWMyLThjYjktMTNlM2NmYjc1OGRiXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_FMjpg_UX1000_.jpg"
-            alt="">
-          <p>ZS Justice League</p>
-        </div>
-        <div
-          class="col-6 col-sm-4 col-md-3 col-lg-2 px-3 pt-2 pt-md-0 peli-serie d-flex flex-column text-center align-items-center">
-          <img class="img-fluid" src="img/godzilla.jpg" alt="">
-          <p>Godzilla vs Kong</p>
-        </div>
-        <div
-          class="col-6 col-sm-4 col-md-3 col-lg-2 px-3 pt-2 pt-md-0 peli-serie d-flex flex-column text-center align-items-center">
-          <img class="img-fluid" src="img/spiderman.jpg" alt="">
-          <p>Spider-Man No Way Home</p>
-        </div>
-        <div
-          class="col-6 col-sm-4 col-md-3 col-lg-2 px-3 pt-2 pt-md-0 peli-serie d-flex flex-column text-center align-items-center">
-          <img class="img-fluid" src="img/cruella.jpg" alt="">
-          <p>Cruella</p>
-        </div>
-        <div
-          class="col-6 col-sm-4 col-md-3 col-lg-2 px-3 pt-2 pt-md-0 peli-serie d-flex flex-column text-center align-items-center">
-          <img class="img-fluid" src="img/parasite.jpg" alt="">
-          <p>Parasito</p>
-        </div>
-        <div
-          class="col-6 col-sm-4 col-md-3 col-lg-2 px-3 pt-2 pt-md-0 peli-serie d-flex flex-column text-center align-items-center">
-          <img class="img-fluid" src="img/john-wick.jpg" alt="">
-          <p>John Wick 3</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid pt-3">
-      <h3 class="titulos">Explora las proximas peliculas y series (Trailers)</h3>
-      <div class="row pt-2">
-        <h4>Proximamene en cines</h4>
-        <div
-          class="col-12 col-md-4 px-3 pt-2 pt-md-0 prox-peli-serie d-flex flex-column text-center align-items-center">
-          <video controls autoplay muted loop>
-            <source src="./videos/DC LEAGUE OF SUPER-PETS – Official Trailer.mp4" type="video/mp4">
-          </video>
-          <p>DC League of Super-Pets</p>
-        </div>
-        <div
-          class="col-12 col-md-4 px-3 pt-2 pt-md-0 prox-peli-serie d-flex flex-column text-center align-items-center">
-          <video controls autoplay muted loop>
-            <source src="./videos/Dragon Ball Super_ SUPER HERO - Tráiler Oficial (Doblado).mp4" type="video/mp4">
-          </video>
-          <p>Dragon Ball Super: Super Hero</p>
-        </div>
-        <div
-          class="col-12 col-md-4 px-3 pt-2 pt-md-0 prox-peli-serie d-flex flex-column text-center align-items-center">
-          <video controls autoplay muted loop>
-            <source src="./videos/SPIDER-MAN_ ACROSS THE SPIDER-VERSE (PART ONE) – First Look.mp4" type="video/mp4">
-          </video>
-          <p>Spider-Man: Across the Spider-Verse (Part One)</p>
-        </div>
-      </div>
-      <div class="row pt-2">
-        <h4>Proximamente en Streaming</h4>
-        <div
-          class="col-12 col-md-4 px-3 pt-2 pt-md-0 prox-peli-serie d-flex flex-column text-center align-items-center">
-          <video controls autoplay muted loop>
-            <source src="./videos/The Lord of the Rings_ The Rings of Power – Teaser Trailer _ Prime Video.mp4"
-              type="video/mp4">
-          </video>
-          <p>The Lord of the Rings: The Rings of Power</p>
-        </div>
-        <div
-          class="col-12 col-md-4 px-3 pt-2 pt-md-0 prox-peli-serie d-flex flex-column text-center align-items-center">
-          <video controls autoplay muted loop>
-            <source src="./videos/Paper Girls - Official Trailer _ Prime Video.mp4" type="video/mp4">
-          </video>
-          <p>Paper Girls</p>
-        </div>
-        <div
-          class="col-12 col-md-4 px-3 pt-2 pt-md-0 prox-peli-serie d-flex flex-column text-center align-items-center">
-          <video controls autoplay muted loop>
-            <source src="./videos/Green Lantern_ Beware My Power _ Trailer _ Warner Bros. Entertainment.mp4"
-              type="video/mp4">
-          </video>
-          <p>Green Lantern: Beware My Power</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid pt-3">
-      <h3 class="titulos">Más por descubrir</h3>
-      <div class="row w-100 pt-2 mx-0">
-        <h4 class="p-0">Noticias de la semana</h4>
-        <div class="col-12 col-lg-4 p-0 pt-md-0">
-          <a class="m-0 p-0 d-flex flex-row noticias"
-            href="https://variety.com/2022/tv/news/the-bear-fx-season-2-renewed-1235316515/" target="_blank">
-            <img class="img-fluid"
-              src="https://m.media-amazon.com/images/M/MV5BZDVmY2VkNjQtYjVjOS00MDM4LWJhMDctMjQwZmJmMzEwM2E1XkEyXkFqcGdeQXVyMTE0MzQwMjgz._V1_QL75_UY266_CR146,0,180,266_.jpg"
-              alt="">
-            <div class="container-fluid d-flex flex-column justify-content-center">
-              <h6>'The Bear' renovada para una segunda temporada por FX</h6>
-              <p>14 jul Varierty - TV News</p>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://cdn.akamai.steamstatic.com/steam/apps/1938090/header.jpg?t=1662612400"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+              </div>
             </div>
-          </a>
-        </div>
-        <div class="col-12 col-lg-4 p-0 px-0 py-1 py-lg-0 px-lg-1 px-xxl-3">
-          <a class="m-0 p-0 d-flex flex-row noticias"
-            href="https://www.hollywoodreporter.com/tv/tv-news/david-beckham-series-netflix-fisher-stevens-john-battsek-1235179566/"
-            target="_blank">
-            <img class="img-fluid"
-              src="https://m.media-amazon.com/images/M/MV5BYzI2MjE4NmEtOWM1NS00MWIyLThmMmUtNjZjNTljMTk1MjJjXkEyXkFqcGdeQXVyMTE0MzQwMjgz._V1_QL75_UY266_CR43,0,180,266_.jpg"
-              alt="">
-            <div class="container-fluid d-flex flex-column justify-content-center">
-              <h6>Serie documental de David Beckham en obras en Netflix con los ganadores del Oscar Fisher Stevens, John
-                Battsek</h6>
-              <p>13 jul T.H.R. - Movie News</p>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://cdn.akamai.steamstatic.com/steam/apps/1938090/header.jpg?t=1662612400"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+              </div>
             </div>
-          </a>
-        </div>
-        <div class="col-12 col-lg-4 p-0 pt-md-0">
-          <a class="m-0 p-0 d-flex flex-row noticias"
-            href="https://variety.com/2022/tv/news/alfonso-ribeiro-tyra-banks-dancing-with-the-stars-co-host-1235316397/"
-            target="_blank">
-            <img class="img-fluid"
-              src="https://m.media-amazon.com/images/M/MV5BMDVhZmE2ZTYtNDA1Yy00NDg2LThkMjQtYTJjNWU1MGYyYTlkXkEyXkFqcGdeQXVyMTE0MzQwMjgz._V1_QL75_UY266_CR132,0,180,266_.jpg"
-              alt="">
-            <div class="container-fluid d-flex flex-column justify-content-center">
-              <h6>Alfonso Ribeiro se une a la temporada 31 de 'Dancing With the Stars' como coanfitrión de Tyra Banks
-              </h6>
-              <p>14 jul Varierty - TV News</p>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://cdn.akamai.steamstatic.com/steam/apps/1938090/header.jpg?t=1662612400"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+              </div>
             </div>
-          </a>
+          </div>
         </div>
-
+        <!-- <div class="carousel-item active">
+        <img src="..." class="d-block w-100" alt="...">
       </div>
-      <div class="row pt-2 m-0 my-2">
-        <h4 class="p-0">Actores y actrices destacados</h4>
-        <div class="actor col-6 col-sm-3 col-md-2 px-3 pt-2 pt-md-0 d-flex flex-column align-items-center">
-          <img class="img-fluid rounded-circle"
-            src="https://ekstrabladet.dk/incoming/article4924354.ece/IMAGE_ALTERNATES/p910/People-Dwayne%20Johnson"
-            alt="">
-          <h5 class="pt-1 d-xxl-none text-center">Dwayne 'The Rock' Johnson</h5>
-          <h4 class="pt-1 d-none d-xxl-block text-center">Dwayne 'The Rock' Johnson</h4>
-        </div>
-        <div class="actor col-6 col-sm-3 col-md-2 px-3 pt-2 pt-md-0 d-flex flex-column align-items-center">
-          <img class="img-fluid rounded-circle"
-            src="https://fotografias.antena3.com/clipping/cmsimages01/2021/06/09/1B461634-FDE7-4B4C-AF99-B55B1CC4E64C/104.jpg?crop=2784,2784,x688,y0&width=1200&height=1200&optimize=low&format=webply"
-            alt="">
-          <h5 class="pt-1 d-xxl-none text-center">Elizabeth Olsen</h5>
-          <h4 class="pt-1 d-none d-xxl-block text-center">Elizabeth Olsen</h4>
-        </div>
-        <div class="actor col-6 col-sm-3 col-md-2 px-3 pt-2 pt-md-0 d-flex flex-column align-items-center">
-          <img class="img-fluid rounded-circle" src="https://www.famousbirthdays.com/headshots/tom-holland-3.jpg"
-            alt="">
-          <h5 class="pt-1 d-xxl-none text-center">Tom Holland</h5>
-          <h4 class="pt-1 d-none d-xxl-block text-center">Tom Holland</h4>
-        </div>
-        <div class="actor col-6 col-sm-3 col-md-2 px-3 pt-2 pt-md-0 d-flex flex-column align-items-center">
-          <img class="img-fluid rounded-circle"
-            src="https://media.revistavanityfair.es/photos/60e8407546da3cf1bc9fa229/master/w_1600%2Cc_limit/149027.jpg"
-            alt="">
-          <h5 class="pt-1 d-xxl-none text-center">Margot Robbie</h5>
-          <h4 class="pt-1 d-none d-xxl-block text-center">Margot Robbie</h4>
-        </div>
-        <div class="actor col-6 col-sm-3 col-md-2 px-3 pt-2 pt-md-0 d-flex flex-column align-items-center">
-          <img class="img-fluid rounded-circle"
-            src="https://akns-images.eonline.com/eol_images/Entire_Site/202258/rs_1200x1200-220608171833-1200-zendaya-time-100-GettyImages-1401823363.jpg?fit=around%7C1200:1200&output-quality=90&crop=1200:1200;center,top"
-            alt="">
-          <h5 class="pt-1 d-xxl-none text-center">Zendaya Coleman</h5>
-          <h4 class="pt-1 d-none d-xxl-block text-center">Zendaya Coleman</h4>
-        </div>
-        <div class="actor col-6 col-sm-3 col-md-2 px-3 pt-2 pt-md-0 d-flex flex-column align-items-center">
-          <img class="img-fluid rounded-circle"
-            src="https://www.etonline.com/sites/default/files/styles/max_640x640/public/images/2022-05/Henry_Cavill_GettyImages-1356745874_1280.jpg?h=c673cd1c&itok=_2LZFw6O"
-            alt="">
-          <h5 class="pt-1 d-xxl-none text-center">Henry Cavill</h5>
-          <h4 class="pt-1 d-none d-xxl-block text-center">Henry Cavill</h4>
-        </div>
+      <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
       </div>
-    </div>
+      <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+      </div>
+    </div> -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- fin carrousel 2 -->
+      <!-- fin Hero -->
+      <main>
 
 
-  </main>
-  <!-- fin 2 columnas -->
-  <!-- Footer -->
-  <footer class="mt-auto">
-    <div class="row m-0 p-0 pt-4 text-white w-100 hover-links">
-      <div class="col-12 col-sm-12 col-md-4 p-0 d-flex flex-column align-items-center">
-        <a href="./index.html" class="m-0 p-0 d-flex flex-column align-items-center text-decoration-none">
-          <img class="rounded-circle" src="/img/logo.jpeg" width="100" height="100" alt="logo">
-          <h5 class="my-2">Pochocleros ©</h5>
-        </a>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 p-0" id="redes">
-        <p class="h5 mb-3">Redes sociales</p>
-        <div class="mb-2">
-          <i class="fa-brands fa-facebook"></i>
-          <a class="text-secondary text-decoration-none" href="https://www.facebook.com/">Facebook</a>
+
+      </main>
+      <!-- Footer -->
+      <footer class="mt-auto bg-secondary">
+        <div class="row m-0 mt-4 p-0 pt-4 text-white w-100 hover-links">
+          <div class="col-12 col-sm-12 col-md-4 p-0 d-flex flex-column align-items-center">
+            <a href="./index.html" class="m-0 p-0 d-flex flex-column align-items-center text-decoration-none">
+              <img class="rounded-circle" src="/img/LOGO.jpg" width="100" height="100" alt="logo">
+              <h5 class="my-2">GAMERS ©</h5>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 p-0" id="info-footer">
+            <p class="h5 mb-3 text-black">Información</p>
+            <div class="mb-2">
+              <a class="text-dark text-decoration-none" href="/error_404.html">Terminos & condiciones</a>
+            </div>
+            <div class="mb-2">
+              <a class="text-dark text-decoration-none" href="/error_404.html">
+                Política de privacidad</a>
+            </div>
+            <div class="mb-2">
+              <a class="text-dark text-decoration-none" href="/contacto.html">Contacto</a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 p-0" id="redes">
+            <p class="h5 mb-3 text-black">Redes sociales</p>
+            <div class="mb-2">
+              <i class="fa-brands fa-facebook"></i>
+              <a class="text-dark text-decoration-none" href="https://www.facebook.com/">Facebook</a>
+            </div>
+            <div class="mb-2">
+              <i class="fa-brands fa-github"></i>
+              <a class="text-dark text-decoration-none"
+                href="https://github.com/nicosalasaraoz/proyecto_1_grupo2">GitHub</a>
+            </div>
+            <div class="mb-2">
+              <i class="fa-brands fa-linkedin"></i>
+              <a class="text-dark text-decoration-none" href="https://www.linkedin.com/">Linkedin</a>
+            </div>
+          </div>
+
+          <div class="col-xs-12 p-0 mt-5 copyright">
+            <p class="m-0 my-5 text-white text-center">Copyright - GAMERS © 2022</p>
+          </div>
         </div>
-        <div class="mb-2">
-          <i class="fa-brands fa-github"></i>
-          <a class="text-secondary text-decoration-none"
-            href="https://github.com/nicosalasaraoz/proyecto_1_grupo2">GitHub</a>
-        </div>
-        <div class="mb-2">
-          <i class="fa-brands fa-linkedin"></i>
-          <a class="text-secondary text-decoration-none" href="https://www.linkedin.com/">Linkedin</a>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 p-0" id="info-footer">
-        <p class="h5 mb-3">Información</p>
-        <div class="mb-2">
-          <a class="text-secondary text-decoration-none" href="/error_404.html">Terminos & condiciones</a>
-        </div>
-        <div class="mb-2">
-          <a class="text-secondary text-decoration-none" href="/error_404.html">
-            Política de privacidad</a>
-        </div>
-        <div class="mb-2">
-          <a class="text-secondary text-decoration-none" href="/contacto.html">Contacto</a>
-        </div>
-      </div>
-      <div class="col-xs-12 p-0 mt-4 copyright">
-        <p class="m-0 my-2 text white text-center">Copyright - Pochocleros © 2022</p>
-      </div>
-    </div>
-  </footer>
+      </footer>
+      <!-- End of Footer -->
 </body>
 
 </html>
