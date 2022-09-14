@@ -24,7 +24,12 @@ header {
     background-color: rgb(175, 174, 189) !important;
     border: 3px solid rgb(80, 80, 80) !important
 }
-
+.img-text {
+    font-size: xx-large;
+}
+.img-btn {
+    font-size: xx-large;
+}
 /* Fin del editar navbar */
 
 /* inicio footer */
