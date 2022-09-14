@@ -1,15 +1,13 @@
 /* Color de fondo del body a negro */
 body {
-    background-color: rgb(35, 32, 39) !important;
+    background-color: rgb(13, 14, 38) !important;
 }
 /* Cambiar tipo de letra solo en main */
 main {
     font-family: 'Roboto', sans-serif;
 }
-
-.boton-principal {
-    background-color: #f3f2ed !important;
-    font: bold;
+header {
+    padding-top: 7rem !important;
 }
 
 /* Inicio del editar navbar */
@@ -49,9 +47,9 @@ footer {
     background-color: black !important;
 }
 .hover-links a {
-    color: rgb(5, 5, 5) !important;
+    color: white !important;
 }
 .hover-links a:hover {
-    color: white !important;
+    color: black !important;
 }
 /* fin footer */
