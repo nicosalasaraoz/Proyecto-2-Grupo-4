@@ -94,52 +94,39 @@ un contenedor flexible -->
 
         <!-- Fin de navbar -->
     </header>
-
+<!--inicio de main-->
     <main>
-        <div class="container-fluid h-100 d-flex flex-column justify-content-center align-items-center">
-            <div class="container-fluid m-0 p-0 d-flex justify-content-center" id="principal-contacto">
-                <div class="row justify-content-between w-100" id="contenido-contacto">
-
-                    <!-- Inicio del iframe del google maps -->
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-7 p-0">
-                        <div class="container-fluid m-0 p-0 h-100 mapa">
-                            <iframe class="p-2" width="100%" height="100%" heighframeborder="0" scrolling="no"
-                                marginheight="0" marginwidth="0"
-                                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Les%20Rambles,%201%20Barcelona,%20Spain+(Mi%20nombre%20de%20egocios)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
-                                    href="https://www.gps.ie/car-satnav-gps/">GPS car tracker</a></iframe>
-                        </div>
+        <div class="container-fluid cont-contacto ">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-12 col-md-6 py-3">
+                        <img src="/img/contacto1.jpeg" alt="Render Gamers" class="img-fluid" title="Render Gamers">
+                        <h3 class="titulo mt-3">Visitanos en nuestro local</h3>
+                          <p class="contacto-direccion"> Ubicación: General Paz 576</p>
+                          <a href="https://g.page/RollingCodeSchool?share" target="_blank" class="btn btn-primary">Ir con GMaps <i class="fa-solid fa-location-dot"></i></a>
                     </div>
-                    <!-- Fin del iframe del google maps -->
 
-                    <!-- Inicio del formulario de contacto -->
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-5 p-4 d-flex flex-column">
-                        <div class="container-fluid p-0 m-0 text-center logo">
-                            <img class="rounded-circle" src="/img/logo.jpeg" alt="logo.png">
-                        </div>
-                        <h3>Contacto</h3>
+                    <div class="col col-12 col-md-6  py-3">
+                        <h3 class="titulo">Contacto</h3>
                         <form action="https://formspree.io/f/meqnygbn" method="post">
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Email</label>
                                 <input type="email" class="form-control" name="exampleFormControlInput1"
-                                    id="exampleFormControlInput1" placeholder="nombre@email.com" required>
+                                    id="texto1" placeholder="nombre@email.com" required>
                             </div>
                             <div class="mb-3">
-                                <label for="nombre" class="form-label">Nombre y Apellidos (No obligatorio)</label>
-                                <input type="name" name="nombre" placeholder="Juan Pereira" class="form-control"
-                                    id="nombre">
+                                <label for="nombre" class="form-label">Nombre y Apellido</label>
+                                <input type="name" name="nombre" placeholder="Juan Pereira" required  class="form-control"
+                                    id="texto2">
                             </div>
                             <div class="mb-3">
                                 <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-                                <textarea class="form-control mh-100" name="exampleFormControlTextarea1"
-                                    id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <textarea class="form-control mh-100" name="exampleFormControlTextarea1" placeholder="Deja tu Mensaje"
+                                    id="texto3" rows="3" required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            <button type="submit" onclick="validarForm()"  class="btn btn-primary">Enviar</button>
                         </form>
-                        <div class="container-fluid d-flex justify-content-center h-100 align-items-end">
-                            <h6>O llama al <i class="fa-solid fa-phone px-1"></i> 1234567890</h6>
-                        </div>
                     </div>
-                    <!-- Fin del formulario de contacto -->
                 </div>
             </div>
         </div>
