@@ -1,0 +1,93 @@
+body {
+    background-color: rgb(13, 14, 38) !important;
+}
+main {
+    font-family: 'Roboto', sans-serif;
+}
+/* Inicio del editar navbar */
+#navbar-color {
+    background-color: gray;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.boton-hamburguesa {
+    background-color: black !important;
+    border: 3px solid rgb(53, 53, 53) !important
+}
+.boton-hamburguesa i {
+    color: #DEB522 !important;
+}
+.boton-hamburguesa:hover {
+    background-color: rgb(3, 3, 3) !important;
+    border: 3px solid rgb(80, 80, 80) !important
+}
+.boton-hamburguesa i:hover {
+    color: #ffc800 !important;
+}
+/* Fin del editar navbar */
+.conteiner-fluid
+/* inicio main*/
+#contact-maps{
+    background-image: url(https://th.bing.com/th/id/R.80156a9884fd0a5475f5491e8de927e1?rik=8jkHHs%2b13SU8BQ&riu=http%3a%2f%2foffers.kd2.org%2fpics%2f0e%2f83%2f0e839cf169f4c6db89f263c1cbb7432d9fdeabd6.jpg&ehk=ulSPUl5FVXkQZDEea0CYb8lNfSpYHIHHAHSF%2bZLnEbk%3d&risl=&pid=ImgRaw&r=0);
+}
+
+#contacto-maps-titulo{color: aliceblue;
+}
+
+
+/* AGREGADO A CONTACTO_MODIFICADO ---- VER */
+
+.cont-contacto{
+    margin-top: 90px;
+    margin-bottom: 40px;
+}
+
+.titulo{
+    color: white;
+}
+.contacto-direccion{
+    color: white;
+}
+
+
+
+
+/* FIN DE  AGREGADO */
+
+.a-btn-verde{
+    background-color: var(--color-verde-navbar);
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;    
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+/* inicio footer */
+footer {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: gray !important;
+}
+
+@media only screen and (max-width: 767px) {
+    #redes, #info-footer {
+        padding-left: 10% !important;
+        padding-top: 3% !important;
+    }
+}
+@media only screen and (max-width: 575px) {
+    #redes, #info-footer {
+        padding-left: 9% !important;
+    }
+}
+.copyright {
+    background-color: black !important;
+}
+.hover-links a {
+    color: rgb(5, 5, 5) !important;
+}
+.hover-links a:hover {
+    color: white !important;
+}
+/* fin footer */
