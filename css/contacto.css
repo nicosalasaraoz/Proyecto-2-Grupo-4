@@ -24,9 +24,10 @@ main {
     color: #ffc800 !important;
 }
 /* Fin del editar navbar */
-.conteiner-fluid
+
 /* inicio main*/
 #contact-maps{
+   margin-top: 8px;
     background-image: url(https://th.bing.com/th/id/R.80156a9884fd0a5475f5491e8de927e1?rik=8jkHHs%2b13SU8BQ&riu=http%3a%2f%2foffers.kd2.org%2fpics%2f0e%2f83%2f0e839cf169f4c6db89f263c1cbb7432d9fdeabd6.jpg&ehk=ulSPUl5FVXkQZDEea0CYb8lNfSpYHIHHAHSF%2bZLnEbk%3d&risl=&pid=ImgRaw&r=0);
 }
 
@@ -48,7 +49,9 @@ main {
     color: white;
 }
 
-
+.btn{
+    background-color: gray;
+}
 
 
 /* FIN DE  AGREGADO */
