@@ -10,11 +10,18 @@ header {
     padding-top: 7rem !important;
 }
 
+h5 {
+    font-size: medium !important; }
+
+video{
+    height: 520px;
+}
+
 /* Inicio del editar navbar */
 #navbar-color {
     background-color: gray;
     font-family: 'IBM Plex Sans', sans-serif;
-    font-size: larger;
+    font-size: medium !important;
 }
 .ham-toggler {
     background-color: white !important;
@@ -25,10 +32,11 @@ header {
     border: 3px solid rgb(80, 80, 80) !important
 }
 .img-text {
-    font-size: xx-large;
+    font-size: medium !important;
 }
 .img-btn {
-    font-size: xx-large;
+    font-size: medium !important;
+    justify-content: center;
 }
 /* Fin del editar navbar */
 
@@ -38,27 +46,16 @@ footer {
     background-color: gray !important;
 }
 
-@media only screen and (max-width: 767px) {
-    #redes, #info-footer {
-        padding-left: 10% !important;
-        padding-top: 3% !important;
-    }
-}
-@media only screen and (max-width: 575px) {
-    #redes, #info-footer {
-        padding-left: 9% !important;
-    }
-}
 .copyright {
     background-color: black !important;
-    font-size: larger;
+    font-size: large;
 }
 .hover-links a {
     color: white !important;
-    font-size: larger;
+    font-size: medium;
 }
 .hover-links a:hover {
     color: black !important;
-    font-size: larger;
+    font-size: medium;
 }
 /* fin footer */
