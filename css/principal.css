@@ -14,7 +14,7 @@ h5 {
     font-size: medium !important; }
 
 video{
-    height: 520px;
+    height: 100%;
 }
 
 /* Inicio del editar navbar */
@@ -23,14 +23,21 @@ video{
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: medium !important;
 }
-.ham-toggler {
+#ham-btn{
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 31px;
+    height: 31px;
+}
+/* .ham-toggler {
     background-color: white !important;
     border: 3px solid rgb(53, 53, 53) !important
 }
 .ham-toggler:hover {
     background-color: rgb(175, 174, 189) !important;
     border: 3px solid rgb(80, 80, 80) !important
-}
+} */
 .img-text {
     font-size: medium !important;
 }
@@ -59,3 +66,6 @@ footer {
     font-size: medium;
 }
 /* fin footer */
+@media screen {
+    
+}
