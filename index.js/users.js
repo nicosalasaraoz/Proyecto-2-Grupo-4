@@ -1,19 +1,38 @@
-const Productsfiltered = PRODUCTS
+let productsFiltered = PRODUCTS;
+const busqueda = document.getElementById('busqueda');
+const renderGames = () => 
+{
+  games.innerHTML = '';
+
+  productsFiltered.forEach(product => 
+  {
+    const card = document.createElement('div');
+    card.className = 'col';
+    card.innerHTML = 
+    `<div class="card h-100">
+    <img src="${product.img}" alt="">
+			<div class="card-body">
+        <h5 class="card-title">${product.name}</h5>
+        <p class="card-text">${product.descripcion}</p>
+      </div>
+      <div class="card-footer border-0">
+      </div>
+      <div class="bg-white d-flex">
+        <a href="games.html" id= ${product.id}" class="btn btn-danger ms-auto m-2"> Ver mas
+        </a>
+      </div>
+		 </div>`;
+    games.appendChild(card);
+  });
+};
 
 const searchFilter = () => {
-  console.log (search.value)
-}
-
-<div class="col">
-<div class="card h-100">
-  <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/292030/header_292x136.jpg?t=1659619680" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">juego numero1</h5>
-    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-  </div>
-  <div class="card-footer d-flex">
-    <a class="btn btn-danger ms-auto" href="games.html">Ver mas</a>
-  </div>
-</div>
-</div>
+  productsFiltered = PRODUCTS.filter(p =>
+    p.name
+      .toUpperCase()
+      .includes(busqueda.value.toUpperCase())
+  );
+  renderGames();
+};
+renderGames()
 
