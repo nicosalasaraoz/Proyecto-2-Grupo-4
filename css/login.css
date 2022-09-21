@@ -1,0 +1,37 @@
+body {
+    background-color: rgb(13, 14, 38) !important;
+}
+
+h2 {
+    color: white;
+}
+
+.bg {
+    background-image: url(...);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+a {
+    font-weight: bold;
+    color: rgb(166, 34, 192);
+}
+
+label,
+span {
+    font-weight: 500;
+    color: white;
+}
+
+#mivideo {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -100;
+    background-size: cover;
+}

@@ -1,0 +1,31 @@
+/* Edición del color de fondo del body */
+body {
+  background-image: url(/img/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall.jpg);
+  background-repeat: no-repeat;
+  
+  ;
+}
+.userTable {
+  margin-top: 200px;
+}
+
+
+nav{
+  background-color: gray;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: medium !important;
+}
+.modal-header{
+
+	background-color:gray;
+	border:0px;
+	height:30px;
+}
+.modal-body{
+  background-color: black;
+}
+.modal-footer{
+  background-color: black;
+  border-top: 0px;
+}
+input{background: gray;}
