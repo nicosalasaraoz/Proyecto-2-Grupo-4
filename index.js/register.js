@@ -9,26 +9,22 @@ function validarForm() {
     if (user === '' || pass === '' || validPass === '') {
         alert('formulario en blanco')
     } else {
-
-        for (let i = 0; i < localSTG.length; i++) {
-            const usuarioEnLocalSTG = localSTG[i];
-            array.push(usuarioEnLocalSTG)
-        }
-
-        let userExists = localSTG.filter(local => local.user === user)
-            console.log(userExists)
-        if (userExists.length === 0) {
-            if (pass === validPass) {
-                array.push({ id: localSTG.length + 1, user, pass, role: 'user' })
-                localStorage.setItem('usuario', JSON.stringify(array))
-                console.log(array)
-            } else {
-                alert('contraseñas no son iguales')
+                for (let i = 0; i < localSTG.length; i++) {
+                    const usuarioEnLocalSTG = localSTG[i];
+                    array.push(usuarioEnLocalSTG)
+                }
+                let userExists = localSTG.filter(local => local.user === user)
+                    console.log(userExists)
+                if (userExists.length === 0) {
+                    if (pass === validPass) {
+                        array.push({ id: localSTG.length + 1, user, pass, role: 'user' })
+                        localStorage.setItem('usuario', JSON.stringify(array))
+                        console.log(array)
+                    } else {
+                            alert('contraseñas no son iguales')
+                            }
+                }else{
+                        alert('usuario ya existe')
+                    }
             }
-
-        }else{
-            alert('usuario ya existe')
-        }
-
-    }
 }
