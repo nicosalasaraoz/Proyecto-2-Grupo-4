@@ -1,7 +1,4 @@
-body {
-    background-color: rgb(13, 14, 38) !important;
 
-}
 #navbar-color {
     background-color: gray;
     font-family: 'IBM Plex Sans', sans-serif;
@@ -22,9 +19,7 @@ body {
 }
 /* Fin del editar navbar */
 
-.img-404{
-margin-top: 65px;
-}
+
 /* inicio footer */
 footer {
     font-family: 'IBM Plex Sans', sans-serif;
