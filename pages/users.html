@@ -19,47 +19,43 @@
     crossorigin="anonymous"></script>
 </head>
   <body>
-	  <header class="pt-4">
-      <!-- navbar -->
+    <header class="pt-4">
+      <!-- Inicio del navbar -->
       <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="navbar-color">
-        <div class="container-fluid hover-links ms-5 mt-0">
-          <!-- LOGO -->
-          <div class="row">
-            <div class="col-4">
-              <a href="../pages/index.html" class="m-0 p-0 d-flex flex-column align-items-center text-decoration-none">
-                <img class="rounded-circle" src="/img/logo.png" width="75" height="40" alt="logo">
-              </a>
-            </div>
+        <div class="container-fluid">
+          <a href="/index.html">
+            <img class="rounded-circle" src="/img/logo.png" width="50" height="50" alt="logo">
+          </a>
+          <div class="letra text-light mx-3">
+            <a class="btn" href="/index.html" id="">
+              <p class="p-0 m-0"></p>
+            </a>
           </div>
-      
-          <!-- FIN LOGO -->
           <button class="navbar-toggler ham-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation" id="ham-btn" >
-            <img id="ham-btn" src="https://store.cloudflare.steamstatic.com/public/shared/images/responsive/header_menu_hamburger.png" alt="">
-            <!-- <span class="navbar-toggler-icon"></span> -->
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active text-light me-3" aria-current="page" href="contacto.html">SIGN UP</a>
+                <a class="nav-link active text-light" aria-current="page" href="contacto.html">SIGN UP</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-light me-3" href="../pages/contacto.html">CONTACT</a>
+                <a class="nav-link text-light" href="nosotros.html">CONTACTO</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-light me-3" href="../pages/nosotros.html">ABOUT US</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-light me-3" href="/pages/index.html">LOG OUT</a>
+                <a class="nav-link text-light" href="index.html">LOG OUT</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <!-- End navbar -->
+             <!-- Fin del navbar -->
     </header>
+  
     <main>
+  
       <section class="mt-5">
         <div class=" bg-dark card m-3">
           <div class="row g-0">
@@ -76,92 +72,91 @@
                 <br>
               </div>
               <div class="card-footer d-flex">
-                <a class=" ms-auto btn btn-light" href="/pages/error_404.html">VER OFERTAS</a>
+                <a class=" ms-auto btn btn-light" href="error">VER OFERTAS</a>
               </div>
             </div>
           </div>
         </div>  
       </section>
-      <!-- inicio Search button -->
+                 <!-- inicio Search button -->
       <div class="container-fluid my-5">
         <input class="form-control p-3" id="busqueda" placeholder="Escriba su búsqueda aquí ..."
-              oninput="searchFilter()">
-      </div>
-            <!-- fin del Search button -->
-
+                oninput="renderGames()">
+    </div>
+              <!-- fin del Search button -->
+  
       <div class="d-flex justify-content-center bg-secondary mt-4">
-        <h1 class=" justify-content-center text-white my-2 ">CATEGORÍAS</h1>
+        <h1 class=" justify-content-center text-white my-2 ">CATEGORIAS</h1>
       </div>
-      <h3 class="text-white my-4 ms-3">NOVEDADES</h3>
-      <div class="container-fluid">
-        <div class="carousel-inner container-fluid">
-          <div  id="games" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3  row-cols-xl-6 g-4">
+      
+        <div class="container-fluid">
+          <div  id="games" class="row d-flex"></div>
+        </div>
+        <div>
+          <h2 class="text-center bg-light my-5">PROXIMOS LANZAMIENTOS</h2>
+        </div>
+        <div class="container-fluid">
+          <div class="row d-flex text-white justify-content-center">
+            <div class="col-10 col-lg-6 col-xl-3 my-4">
+              <h3 class="text-center ">Construction Simulator</h3>
+              <video src="https://cdn.cloudflare.steamstatic.com/steam/apps/256889262/movie480_vp9.webm?t=1657289903" controls autoplay muted loop></video>
+            </div>
+            <div class="col-10 col-lg-6 col-xl-3 my-4">
+              <h3 class="text-center">Electrician Simulator</h3>
+              <video src="https://cdn.cloudflare.steamstatic.com/steam/apps/256903796/movie480_vp9.webm?t=1662045594" controls autoplay muted loop></video>
+            </div>
+            <div class="col-10 col-lg-6 col-xl-3 my-4">
+              <h3 class="text-center">Salt 2: Shores of gold</h3>
+              <video src="https://cdn.cloudflare.steamstatic.com/steam/apps/256905707/movie480_vp9.webm?t=1663087189" controls autoplay muted loop></video>
+            </div>
+            <div class="col-10 col-lg-6 col-xl-3 my-4">
+              <h3 class="text-center">There Is No Light</h3>
+              <video src="https://cdn.cloudflare.steamstatic.com/steam/apps/256905520/movie480_vp9.webm?t=1662992302" controls autoplay muted loop></video>
+            </div>
           </div>
         </div>
-      </div>
-      <div>
-        <h2 class="text-center bg-light my-5">PRÓXIMOS LANZAMIENTOS</h2>
-      </div>
-      <div class="container-fluid">
-        <div class="row d-flex text-white justify-content-center">
-          <div class=" d=flex  row col-10 col-lg-5 col-xl-3 my-4">
-            <h3 class="text-center ">Jugdment</h3>
-              <video class="d-flex justify-content-center" src="https://cdn.cloudflare.steamstatic.com/steam/apps/256901464/movie480_vp9.webm?t=1663168014" autoplay loop muted controls width="300" height="200"></video>
-          </div>
-          <div class=" d-flex row col-10 col-lg-5 col-xl-3 my-4">
-            <h3 class="text-center">Isonzo</h3>
-            <video class="d-flex justify-content-center" src="https://cdn.cloudflare.steamstatic.com/steam/apps/256903402/movie480_vp9.webm?t=1663067272" autoplay loop muted controls width="300" height="200"></video>
-          </div>
-          <div class="d-flex row col-10 col-lg-5 col-xl-3 my-4">
-            <h3 class="text-center">Metal: Hellsinger</h3>
-            <video class="d-flex justify-content-center" src="https://cdn.cloudflare.steamstatic.com/steam/apps/256905893/movie480_vp9.webm?t=1663228675" autoplay loop muted controls width="300" height="200"></video>
-
-          </div>
-          <div class=" d-flex row col-10 col-lg-5 col-xl-3 my-4">
-            <h3 class="text-center">There Is No Light</h3>
-            <video class="d-flex justify-content-center" src="https://cdn.cloudflare.steamstatic.com/steam/apps/256905520/movie480_vp9.webm?t=1662992302" autoplay loop muted controls width="300" height="200"></video>
-
-          </div>
-        </div>
-      </div>
     </main>
-
-    <footer class="mt-auto bg-secondary">
+  
+    <footer class="mb-auto bg-secondary mt-3">
       <div class="row m-0 mt-4 p-0 pt-4 text-white w-100 hover-links">
-        <div class="col-12 col-sm-12 col-md-4 pb-3 d-flex flex-column align-items-center mt-3">
-          <a href="/pages/index.html" class="m-0 p-0 d-flex flex-column align-items-center text-decoration-none">
-            <img class="rounded-circle" src="/img/logo.png" width="140" height="90" alt="logo">
+        <div class="col-12 col-sm-12 col-md-4 p-0 d-flex flex-column align-items-center">
+          <a href="./index.html" class="m-0 p-0 d-flex flex-column align-items-center text-decoration-none">
+            <img class="rounded-circle" src="/img/LOGO.jpg" width="100" height="100" alt="logo">
+            <h5 class="my-2">GAMERS ©</h5>
           </a>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 ps-4" id="info-footer">
-          <p class="h5 mb-3 text-black">Información</p>
+        <div class="col-12 col-sm-6 col-md-4 p-0" id="info-footer">
+          <p class="h5 mb-3">Información</p>
           <div class="mb-2">
-            <a class="text-dark text-decoration-none" href="../pages/error_404.html">Términos & condiciones</a>
+            <a class="text-dark text-decoration-none" href="/error_404.html">Terminos & condiciones</a>
           </div>
           <div class="mb-2">
-            <a class="text-dark text-decoration-none" href="../pages/error_404.html">Política de privacidad</a>
+            <a class="text-dark text-decoration-none" href="/error_404.html">
+              Política de privacidad</a>
           </div>
           <div class="mb-2">
-            <a class="text-dark text-decoration-none" href="../pages/contacto.html">Contacto</a>
+            <a class="text-dark text-decoration-none" href="/contacto.html">Contacto</a>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 ps-4" id="redes">
-          <p class="h5 mb-3 text-black">Redes sociales</p>
+        <div class="col-12 col-sm-6 col-md-4 p-0" id="redes">
+          <p class="h5 mb-3">Redes sociales</p>
           <div class="mb-2">
             <i class="fa-brands fa-facebook"></i>
             <a class="text-dark text-decoration-none" href="https://www.facebook.com/">Facebook</a>
           </div>
           <div class="mb-2">
             <i class="fa-brands fa-github"></i>
-            <a class="text-dark text-decoration-none" href="https://github.com/nicosalasaraoz/proyecto_1_grupo2">GitHub</a>
+            <a class="text-dark text-decoration-none"
+              href="https://github.com/nicosalasaraoz/proyecto_1_grupo2">GitHub</a>
           </div>
           <div class="mb-2">
             <i class="fa-brands fa-linkedin"></i>
             <a class="text-dark text-decoration-none" href="https://www.linkedin.com/">Linkedin</a>
           </div>
         </div>
-        <div class="col-xs-12 p-0 mt-2 copyright">
-          <p class="m-0 my-2 text-white text-center"> © 2022 - Render Games </p>
+  
+        <div class="col-xs-12 p-0 mt-4 copyright">
+          <p class="m-0 my-2 text white text-center">Copyright - GAMERS © 2022</p>
         </div>
       </div>
     </footer>
