@@ -72,13 +72,13 @@
                 <br>
               </div>
               <div class="card-footer d-flex">
-                <a class=" ms-auto btn btn-light" href="error">VER OFERTAS</a>
-              </div>
             </div>
           </div>
         </div>  
+                <a class=" ms-auto btn btn-light" href="/pages/error_404.html">VER MAS OFERTAS</a>
+              </div>
       </section>
-                 <!-- inicio Search button -->
+      <!-- inicio Search button -->
       <div class="container-fluid my-5">
         <input class="form-control p-3" id="busqueda" placeholder="Escriba su búsqueda aquí ..."
                 oninput="renderGames()">
@@ -86,7 +86,7 @@
               <!-- fin del Search button -->
   
       <div class="d-flex justify-content-center bg-secondary mt-4">
-        <h1 class=" justify-content-center text-white my-2 ">CATEGORIAS</h1>
+        <h1 class="justify-content-center text-white my-2">CATEGORIAS</h1>
       </div>
       
         <div class="container-fluid">
@@ -96,50 +96,58 @@
           <h2 class="text-center bg-light my-5">PROXIMOS LANZAMIENTOS</h2>
         </div>
         <div class="container-fluid">
+          <div  id="games" class="row d-flex"></div>
+        </div>
+        <div>
+          <h2 class="text-center bg-light my-5">PROXIMOS LANZAMIENTOS</h2>
+        </div>
+        <div class="container-fluid">
           <div class="row d-flex text-white justify-content-center">
-            <div class="col-10 col-lg-6 col-xl-3 my-4">
-              <h3 class="text-center ">Construction Simulator</h3>
-              <video src="https://cdn.cloudflare.steamstatic.com/steam/apps/256889262/movie480_vp9.webm?t=1657289903" controls autoplay muted loop></video>
+            <div class=" d=flex  row col-10 col-lg-5 col-xl-3 my-4">
+              <h3 class="text-center ">Jugdment</h3>
+                <video class="d-flex justify-content-center" src="https://cdn.cloudflare.steamstatic.com/steam/apps/256901464/movie480_vp9.webm?t=1663168014" autoplay loop muted controls width="300" height="200"></video>
             </div>
-            <div class="col-10 col-lg-6 col-xl-3 my-4">
-              <h3 class="text-center">Electrician Simulator</h3>
-              <video src="https://cdn.cloudflare.steamstatic.com/steam/apps/256903796/movie480_vp9.webm?t=1662045594" controls autoplay muted loop></video>
+            <div class=" d-flex row col-10 col-lg-5 col-xl-3 my-4">
+              <h3 class="text-center">Isonzo</h3>
+              <video class="d-flex justify-content-center" src="https://cdn.cloudflare.steamstatic.com/steam/apps/256903402/movie480_vp9.webm?t=1663067272" autoplay loop muted controls width="300" height="200"></video>
             </div>
-            <div class="col-10 col-lg-6 col-xl-3 my-4">
-              <h3 class="text-center">Salt 2: Shores of gold</h3>
-              <video src="https://cdn.cloudflare.steamstatic.com/steam/apps/256905707/movie480_vp9.webm?t=1663087189" controls autoplay muted loop></video>
+            <div class="d-flex row col-10 col-lg-5 col-xl-3 my-4">
+              <h3 class="text-center">Metal: Hellsinger</h3>
+              <video class="d-flex justify-content-center" src="https://cdn.cloudflare.steamstatic.com/steam/apps/256905893/movie480_vp9.webm?t=1663228675" autoplay loop muted controls width="300" height="200"></video>
+  
             </div>
-            <div class="col-10 col-lg-6 col-xl-3 my-4">
+            <div class=" d-flex row col-10 col-lg-5 col-xl-3 my-4">
               <h3 class="text-center">There Is No Light</h3>
-              <video src="https://cdn.cloudflare.steamstatic.com/steam/apps/256905520/movie480_vp9.webm?t=1662992302" controls autoplay muted loop></video>
+              <video class="d-flex justify-content-center" src="https://cdn.cloudflare.steamstatic.com/steam/apps/256905520/movie480_vp9.webm?t=1662992302" autoplay loop muted controls width="300" height="200"></video>
+  
             </div>
           </div>
         </div>
     </main>
   
-    <footer class="mb-auto bg-secondary mt-3">
+    <!-- Footer -->
+    <footer class="mt-auto bg-secondary">
       <div class="row m-0 mt-4 p-0 pt-4 text-white w-100 hover-links">
-        <div class="col-12 col-sm-12 col-md-4 p-0 d-flex flex-column align-items-center">
+        <div class="col-12 col-sm-12 col-md-4 pb-3 d-flex flex-column align-items-center mt-3">
           <a href="./index.html" class="m-0 p-0 d-flex flex-column align-items-center text-decoration-none">
-            <img class="rounded-circle" src="/img/LOGO.jpg" width="100" height="100" alt="logo">
-            <h5 class="my-2">GAMERS ©</h5>
+            <img class="rounded-circle" src="/img/logo.png" width="140" height="90" alt="logo">
           </a>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 p-0" id="info-footer">
-          <p class="h5 mb-3">Información</p>
+        <div class="col-12 col-sm-6 col-md-4 ps-4" id="info-footer">
+          <p class="h5 mb-3 text-black">Información</p>
           <div class="mb-2">
-            <a class="text-dark text-decoration-none" href="/error_404.html">Terminos & condiciones</a>
+            <a class="text-dark text-decoration-none" href="../pages/error_404.html">Términos & condiciones</a>
           </div>
           <div class="mb-2">
-            <a class="text-dark text-decoration-none" href="/error_404.html">
+            <a class="text-dark text-decoration-none" href="../pages/error_404.html">
               Política de privacidad</a>
           </div>
           <div class="mb-2">
-            <a class="text-dark text-decoration-none" href="/contacto.html">Contacto</a>
+            <a class="text-dark text-decoration-none" href="../pages/contacto.html">Contacto</a>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 p-0" id="redes">
-          <p class="h5 mb-3">Redes sociales</p>
+        <div class="col-12 col-sm-6 col-md-4 ps-4" id="redes">
+          <p class="h5 mb-3 text-black">Redes sociales</p>
           <div class="mb-2">
             <i class="fa-brands fa-facebook"></i>
             <a class="text-dark text-decoration-none" href="https://www.facebook.com/">Facebook</a>
@@ -154,12 +162,13 @@
             <a class="text-dark text-decoration-none" href="https://www.linkedin.com/">Linkedin</a>
           </div>
         </div>
-  
-        <div class="col-xs-12 p-0 mt-4 copyright">
-          <p class="m-0 my-2 text white text-center">Copyright - GAMERS © 2022</p>
+
+        <div class="col-xs-12 p-0 mt-2 copyright">
+          <p class="m-0 my-2 text-white text-center"> © 2022 - Render Games </p>
         </div>
       </div>
     </footer>
+    <!-- End of Footer -->
     <!-- Scripts -->
 	  <script src="/index.js/arrays.js"></script>
     <script src="/index.js/users.js"></script>
