@@ -1,10 +1,4 @@
-body {
-    background-image: url(https://wallpapercave.com/wp/wp2661692.jpg) !important;
-}
-main {
-    font-family: 'Roboto', sans-serif;
-}
-/* Inicio del editar navbar */
+
 #navbar-color {
     background-color: gray;
     font-family: 'IBM Plex Sans', sans-serif;
@@ -24,6 +18,8 @@ main {
     color: #ffc800 !important;
 }
 /* Fin del editar navbar */
+
+
 /* inicio footer */
 footer {
     font-family: 'IBM Plex Sans', sans-serif;
