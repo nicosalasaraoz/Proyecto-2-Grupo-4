@@ -3,7 +3,7 @@ body {
 
 }
 .userTable {
-  margin-top: 200px;
+  margin-top: 50px;
 }
 
 .modal-header{
@@ -22,11 +22,17 @@ body {
 input{
   background-color: gray;
 }
+
 .table td{
   align-items: center;
   justify-content: center;
   align-content: center;
 }
+.btn{
+  width: 100px;
+  margin: 5px;
+}
+
 #checkbox{
   position: relative;
 
