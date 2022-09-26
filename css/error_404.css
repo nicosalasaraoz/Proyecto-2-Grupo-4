@@ -1,49 +1,66 @@
+/* Color de fondo del body a negro */
+body {
+    background-color: rgb(13, 14, 38) !important;
+}
+/* Cambiar tipo de letra solo en main */
+main {
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    padding-top: 7rem !important;
+}
 
+h5 {
+    font-size: medium !important; 
+}
+
+.img-top{
+    width: 100% !important;
+    height: 25rem !important;
+}
+
+/* Inicio del editar navbar */
 #navbar-color {
     background-color: gray;
     font-family: 'IBM Plex Sans', sans-serif;
+    font-size: medium !important;
 }
-.boton-hamburguesa {
-    background-color: black !important;
-    border: 3px solid rgb(53, 53, 53) !important
+#ham-btn{
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 31px;
+    height: 31px;
 }
-.boton-hamburguesa i {
-    color: #DEB522 !important;
+.img-text {
+    font-size: medium !important;
 }
-.boton-hamburguesa:hover {
-    background-color: rgb(3, 3, 3) !important;
-    border: 3px solid rgb(80, 80, 80) !important
-}
-.boton-hamburguesa i:hover {
-    color: #ffc800 !important;
+.img-btn {
+    font-size: medium !important;
+    justify-content: center;
 }
 /* Fin del editar navbar */
 
-
+/* incio  main */
+.row-404{
+    justify-content: center;
+}
 /* inicio footer */
 footer {
     font-family: 'IBM Plex Sans', sans-serif;
     background-color: gray !important;
 }
 
-@media only screen and (max-width: 767px) {
-    #redes, #info-footer {
-        padding-left: 10% !important;
-        padding-top: 3% !important;
-    }
-}
-@media only screen and (max-width: 575px) {
-    #redes, #info-footer {
-        padding-left: 9% !important;
-    }
-}
 .copyright {
     background-color: black !important;
+    font-size: large;
 }
 .hover-links a {
-    color: rgb(5, 5, 5) !important;
+    color: white !important;
+    font-size: medium;
 }
 .hover-links a:hover {
-    color: white !important;
+    color: black !important;
+    font-size: medium;
 }
 /* fin footer */
