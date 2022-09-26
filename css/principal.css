@@ -14,8 +14,9 @@ h5 {
     font-size: medium !important; 
 }
 
-video{
-    height: 100%;
+.img-top{
+    width: 100% !important;
+    height: 25rem !important;
 }
 
 /* Inicio del editar navbar */
@@ -31,14 +32,6 @@ video{
     width: 31px;
     height: 31px;
 }
-/* .ham-toggler {
-    background-color: white !important;
-    border: 3px solid rgb(53, 53, 53) !important
-}
-.ham-toggler:hover {
-    background-color: rgb(175, 174, 189) !important;
-    border: 3px solid rgb(80, 80, 80) !important
-} */
 .img-text {
     font-size: medium !important;
 }
