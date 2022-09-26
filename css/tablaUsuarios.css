@@ -1,9 +1,9 @@
 /* Edición del color de fondo del body */
 body {
- background-image: url(/img/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall.jpg);
+
 }
 .userTable {
-  margin-top: 200px;
+  margin-top: 50px;
 }
 
 .modal-header{
@@ -22,3 +22,52 @@ body {
 input{
   background-color: gray;
 }
+
+.table td{
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.btn{
+  width: 100px;
+  margin: 5px;
+}
+
+#checkbox{
+  position: relative;
+
+  width: 120px;
+  height: 70px;
+  
+  border-radius: 75px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+#checkbox input{
+  appearance: none;
+}
+#checkbox span{
+  position: absolute;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  background: url(/img/1664166406711.png);
+  background-size: auto 80px;
+  background-repeat: no-repeat;
+  transition: 1s;
+  
+  transform-origin: 75px;
+}
+#checkbox input:checked ~ span{
+  left: 70px;
+  background: url(/img/1664166493487.png);
+  background-size: auto 80px;
+  background-repeat: no-repeat;
+  
+}
+
+
+
