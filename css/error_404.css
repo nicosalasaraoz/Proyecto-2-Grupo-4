@@ -63,10 +63,13 @@ header {
 
 
 /* incio  main */
-.row-404{
+/* .row-404{
     justify-content: center;
+} */
+h1{
+color: aliceblue;
+text-align: center;
 }
-
 
 /* inicio footer */
 footer {
