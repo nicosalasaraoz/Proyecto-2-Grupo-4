@@ -116,7 +116,7 @@
         <div class="d-flex justify-content-between mb-5">
           <h1 class="text-white">Tabla de usuarios</h1>
           <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
-            data-bs-target="#nuevousuariomodal">Crear Usuario</button>
+            data-bs-target="#nuevousuariomodal" >Crear Usuario</button>
           <div class="modal fade" id="nuevousuariomodal" tabindex="-1" aria-labelledby="nuevousuariomodalLabel"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-md">
@@ -130,23 +130,22 @@
                   <form role="form">
     
                     <div class="form-group">
-                      <label for="inputNombre"></label>
-                      <input type="name" class="form-control" id="inputName" placeholder="Correo Electronico" />
+                      <label for="email" class="form-label" ></label>
+                        <input type="email" class="form-control" id="user" name="email" placeholder="Correo electronico" required>
                     </div>
                     <div class="form-group">
-                      <label for="inputapellido">
-                      </label>
-                      <input type="text" class="form-control" id="inputapellido" placeholder="Contraseña" />
+                      <label for="password" class="form-label" ></label>
+                        <input type="password" class="form-control" name="password" id="pass" placeholder="Contraseña" required>
                     </div>
                     <div class="form-group">
-                      <label for="inputName"></label>
-                      <input type="text" class="form-control" id="inputName" placeholder="Confirmar Contraseña" />
+                      <label for="password" class="form-label" ></label>
+                        <input type="password" class="form-control" name="confirm-password" id="validPass"  placeholder="confirmar contraseña" required>
                     </div>
                   </form>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                  <button type="button" class="btn btn-primary">Crear usuario</button>
+                  <button type="button" class="btn btn-primary" id="crearusuario">Crear usuario</button>
                 </div>
               </div>
             </div>
@@ -813,5 +812,6 @@ data-bs-target="#destacarmodal">Destacar</button>
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
+    <script src="/index.js/homeadmin.js"></script>
   </body>
 </html>
