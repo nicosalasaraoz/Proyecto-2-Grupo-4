@@ -1,4 +1,4 @@
-(
+/*(
     function validarDato() {
         let id = localStorage.getItem('id')
         let localSTG = JSON.parse(localStorage.getItem('usuario')) || [];
