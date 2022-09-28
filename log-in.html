@@ -34,11 +34,11 @@
                 <form action="#">
                     <div class="mb-4">
                         <label for="email" class="form-label">Correo electrónico</label>
-                        <input type="email" class="form-control" name="email" required>
+                        <input type="email" class="form-control" name="email" id="user" required>
                     </div>
                     <div class="mb-4">
                         <label for="password" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" name="password" required>
+                        <input type="password" class="form-control" name="password" id="pass" required>
                     </div>
                     <div class="mb-4 form-check">
                         <input type="checkbox" name="connected" class="form-check-input" id="">
@@ -46,7 +46,7 @@
                     </div>
 
                     <div class="d-grid">
-                        <button type="button" class="btn btn-primary" id="botonRegistro" onclick="validarForm()">Iniciar
+                        <button type="button" class="btn btn-primary" id="botonRegistro" onclick="login();">Iniciar
                             Sesión</button>
                     </div>
 
