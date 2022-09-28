@@ -10,4 +10,5 @@ if (product) { console.log (product)
   document.getElementById('productDescripcion').innerHTML = product.descripcion;
   document.getElementById('productVideo').innerHTML = `<video src="${product.video}" autoplay loop muted ></video>`;
 } else {
-  window.location.href = '/pages/error_404.html';
+  window.location.href = 'error_404.html';
+}

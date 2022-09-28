@@ -1,5 +1,4 @@
 
-//funcionalidad Crear usuario
 let button = document.getElementById('crearusuario').addEventListener('click', O => {
     let user = document.getElementById('user').value;
     let pass = document.getElementById('pass').value;
@@ -29,6 +28,6 @@ let button = document.getElementById('crearusuario').addEventListener('click', O
         }
     })
     
-//funcionalidad tabla usuario
+
 
  

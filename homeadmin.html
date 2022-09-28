@@ -29,23 +29,16 @@
       <!-- navbar -->
       <nav
         class="navbar navbar-expand-lg bg-secondary fixed-top"
-        id="navbar-color"
-      >
+        id="navbar-color">
         <div class="container-fluid hover-links ms-5 mt-0">
           <!-- LOGO -->
-          <div class="row">
-            <div class="col-4">
-              <a
-                href="../pages/index.html"
-                class="m-0 p-0 d-flex flex-column align-items-center text-decoration-none"
-              >
-                <img
-                  class="rounded-circle"
-                  src="../img/logo.png"
-                  width="120"
-                  height="60"
-                  alt="logo"
-                />
+              <div class="row">
+                  <div class="col-4">
+                    <a href="index.html" class="m-0 p-0 d-flex flex-column align-items-center text-decoration-none">
+                      <img class="rounded-circle" src="/img/logo.png" width="75" height="40" alt="logo">
+                    </a>
+                  </div>
+                </div>
               </a>
             </div>
           </div>
@@ -66,8 +59,8 @@
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               
               <li class="nav-item">
-                <a class="nav-link active text-light me-5" href="#">Cerrar Sesión</a>
-              </li>
+                <button type="button" class="btn btn-success" onclick="logout()"> Cerrar Sesion</button>
+            </li>
             </ul>
           </div>
         </div>
@@ -151,8 +144,35 @@
             </div>
           </div>
         </div>
-    
-        <table class="table table-dark table-hover table align-middle">
+
+
+       <!-- inicio nuevo codigo--> 
+
+        <main>
+          <!-- <div>
+              <h2 class="text-center my-3">Tabla de Usuarios</h2>
+          </div> -->
+          <div class="container">
+              <div class="row">
+                  <table class="table ">
+                      <thead>
+                          <tr class="text-white">
+                              <th scope="col" >ID</th>
+                              <th scope="col" >Usuario</th>
+                              <th scope="col" >Modificar - Eliminar</th>
+                              <th scope="col" >Cambiar Role</th>
+                          </tr>
+                      </thead>
+                      <tbody id="tBody">
+                          <!-- aqui se injecta el html -->
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+      </main>
+    <!--fin nuevo codigo-->
+    <!--CODIGO HARKODEADO-->
+        <!-- <table class="table table-dark table-hover table align-middle">
           <tr class="align-middle">
             <th>Correo Electronico</th>
             <th>Admin / Usuario</th>
@@ -399,7 +419,7 @@
                 <button type="button" class="btn btn-outline-primary d-none d-lg-inline" data-bs-toggle="modal"
                   data-bs-target="#confirmarusuario">Habilitar</button>
           </tr>
-        </table>
+        </table> -->
       </section>
       </div>
       <div
@@ -778,41 +798,42 @@ data-bs-target="#destacarmodal">Destacar</button>
           <div class="mb-2">
             <i class="fa-brands fa-facebook"></i>
             <a
-              class="text-dark text-decoration-none"
-              href="https://www.facebook.com/"
-              >Facebook</a
+            class="text-dark text-decoration-none"
+            href="https://www.facebook.com/"
+            >Facebook</a
             >
           </div>
           <div class="mb-2">
             <i class="fa-brands fa-github"></i>
             <a
-              class="text-dark text-decoration-none"
-              href="https://github.com/nicosalasaraoz/proyecto_1_grupo2"
-              >GitHub</a
+            class="text-dark text-decoration-none"
+            href="https://github.com/nicosalasaraoz/proyecto_1_grupo2"
+            >GitHub</a
             >
           </div>
           <div class="mb-2">
             <i class="fa-brands fa-linkedin"></i>
             <a
-              class="text-dark text-decoration-none"
+            class="text-dark text-decoration-none"
               href="https://www.linkedin.com/"
               >Linkedin</a
-            >
+              >
+            </div>
+          </div>
+          
+          <div class="col-xs-12 p-0 mt-2 copyright">
+            <p class="m-0 my-2 text-white text-center">© 2022 - Render Games</p>
           </div>
         </div>
-
-        <div class="col-xs-12 p-0 mt-2 copyright">
-          <p class="m-0 my-2 text-white text-center">© 2022 - Render Games</p>
-        </div>
-      </div>
-    </footer>
-    <!-- End of Footer -->
-    <script
+      </footer>
+      <!-- End of Footer -->
+      <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
-    ></script>
-    <script src="/index.js/homeadmin.js"></script>
-    <script src="/index.js/validaradmin.js"></script>
+      ></script>
+      <script src="/index.js/homeadmin.js"></script>
+      <script src="/index.js/validaradmin.js"></script>
+    <script src="/index.js/tablaUsuario.js"></script>
   </body>
 </html>
