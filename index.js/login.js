@@ -1,3 +1,7 @@
+if (JSON.parse(localStorage.getItem("usuario")) === null) {
+    localStorage.setItem("usuario", JSON.stringify([{ id: 1, user: "administrador@gmail.com", pass: "admin", role: 'admin', habilitado: true }]))
+}
+
 function login() {
     let user = document.getElementById('user').value;
     let pass = document.getElementById('pass').value;
@@ -15,5 +19,9 @@ function login() {
                     location.href=  "users.html"
             }, 1000);
         }
+        
+        
+    }else{
+        alert("tu correo electronico no está registrado")
     }
 }
