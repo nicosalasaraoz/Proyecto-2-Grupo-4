@@ -1,7 +1,48 @@
-/* Edición del color de fondo del body */
-body {
 
+body {
+  background-color: rgb(13, 14, 38) !important;
 }
+/* Cambiar tipo de letra solo en main */
+main {
+  font-family: 'Roboto', sans-serif;
+}
+header {
+  padding-top: 7rem !important;
+}
+
+h5 {
+  font-size: medium !important; 
+}
+
+.img-top{
+  width: 100% !important;
+  height: 25rem !important;
+}
+
+/* Inicio del editar navbar */
+#navbar-color {
+  background-color: gray;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: medium !important;
+}
+#ham-btn{
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 31px;
+  height: 31px;
+}
+.img-text {
+  font-size: medium !important;
+}
+.img-btn {
+  font-size: medium !important;
+  justify-content: center;
+}
+
+
+/* Edición del color de fondo del body */
+
 .userTable {
   margin-top: 50px;
 }
@@ -69,5 +110,23 @@ input{
   
 }
 
+/* inicio footer */
+footer {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: gray !important;
+}
 
+.copyright {
+    background-color: black !important;
+    font-size: large;
+}
+.hover-links a {
+    color: white !important;
+    font-size: medium;
+}
+.hover-links a:hover {
+    color: black !important;
+    font-size: medium;
+}
+/* fin footer */
 

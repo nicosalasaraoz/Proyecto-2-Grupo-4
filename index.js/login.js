@@ -10,9 +10,9 @@ function login() {
             setTimeout(() => {
                 userExists[0].role === 'admin'
                     ?
-                    location.href = './t.html'
+                    location.href= "homeadmin.html"
                     :
-                    location.href = './homeUser.html'
+                    location.href=  "users.html"
             }, 1000);
         }
     }

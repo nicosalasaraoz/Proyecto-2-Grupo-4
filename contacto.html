@@ -86,15 +86,15 @@ un contenedor flexible -->
               <form action="https://formspree.io/f/meqnygbn" method="post">
                 <div class="mb-3">
                   <label for="exampleFormControlInput1" class="form-label">Email</label>
-                  <input type="email" class="form-control" name="exampleFormControlInput1" id="texto1" placeholder="nombre@email.com" required/>
+                  <input type="email" class="form-control" name="exampleFormControlInput1" id="texto1" placeholder="nombre@email.com" required minlength="8" maxlength="20"/>
                 </div>
                 <div class="mb-3">
                   <label for="nombre" class="form-label">Nombre y Apellido</label>
-                  <input type="name" name="nombre" placeholder="Juan Pereira" class="form-control" id="texto2" required/>
+                  <input type="name" name="nombre" placeholder="Juan Pereira" class="form-control" id="texto2" required minlength="8" maxlength="20"/>
                 </div>
                 <div class="mb-3">
                   <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-                  <textarea class="form-control mh-100" name="exampleFormControlTextarea1" placeholder="Deja tu Mensaje" id="texto3" rows="3" required></textarea>
+                  <textarea class="form-control mh-100" name="exampleFormControlTextarea1" placeholder="Deja tu Mensaje" id="texto3" rows="3" required maxlength="100"></textarea>
                 </div>
                 <button type="submit" onclick="validarForm ()" class="btn btn-primary mt-3">Enviar</button>
               </form>
@@ -114,14 +114,14 @@ un contenedor flexible -->
         <div class="col-12 col-sm-6 col-md-4 ps-4" id="info-footer">
           <p class="h5 mb-3 text-black">Información</p>
           <div class="mb-2">
-            <a class="text-dark text-decoration-none" href="../pages/error_404.html">Términos & condiciones</a>
+            <a class="text-dark text-decoration-none" href="/error_404.html">Términos & condiciones</a>
           </div>
           <div class="mb-2">
-            <a class="text-dark text-decoration-none" href="../pages/error_404.html">
+            <a class="text-dark text-decoration-none" href="/error_404.html">
               Política de privacidad</a>
           </div>
           <div class="mb-2">
-            <a class="text-dark text-decoration-none" href="../pages/contacto.html">Contacto</a>
+            <a class="text-dark text-decoration-none" href="/contacto.html">Contacto</a>
           </div>
         </div>
         <div class="col-12 col-sm-6 col-md-4 ps-4" id="redes">
