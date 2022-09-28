@@ -1,7 +1,7 @@
-
-let usuarioSTG = JSON.parse(localStorage.getItem('usuario'))
-let tBody = document.getElementById('tBody')
-tBody.innerHTML = usuarioSTG.map(usuarioLocalSTG =>
+let usuarioSTG = JSON.parse(localStorage.getItem("usuario"));
+let tBody = document.getElementById("tBody");
+tBody.innerHTML = usuarioSTG.map(
+  (usuarioLocalSTG) =>
     `   
     <tr>
     <th scope="row" class="text-white">${usuarioLocalSTG.id}</th>
@@ -14,7 +14,7 @@ tBody.innerHTML = usuarioSTG.map(usuarioLocalSTG =>
         </button>
     
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal${usuarioLocalSTG.id}" tabindex="-1"
+        <div class="modal fade text-light" id="exampleModal${usuarioLocalSTG.id}" tabindex="-1"
             aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -23,11 +23,12 @@ tBody.innerHTML = usuarioSTG.map(usuarioLocalSTG =>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                             aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        <form action="" class="form">
-                            <label for="">usuario</label>
+                    <div class="modal-body text-light">
+                        <form action="#" class="form">
+                            <label for="">Usuario</label>
                             <input type="text" value="${usuarioLocalSTG.user}" id="userModal${usuarioLocalSTG.id}">
-                            <label for="">contraseña</label>
+                            <br>
+                            <label for="">Contraseña</label>
                             <input type="password" value="${usuarioLocalSTG.pass}" id="passModal${usuarioLocalSTG.id}">
                         </form>
                     </div>
@@ -47,7 +48,7 @@ tBody.innerHTML = usuarioSTG.map(usuarioLocalSTG =>
         </button>
     
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal2${usuarioLocalSTG.id}" tabindex="-1"
+        <div class="modal fade text-light" id="exampleModal2${usuarioLocalSTG.id}" tabindex="-1"
             aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -75,7 +76,7 @@ tBody.innerHTML = usuarioSTG.map(usuarioLocalSTG =>
         </button>
     
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal3${usuarioLocalSTG.id}" tabindex="-1"
+        <div class="modal fade text-light" id="exampleModal3${usuarioLocalSTG.id}" tabindex="-1"
             aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -94,53 +95,55 @@ tBody.innerHTML = usuarioSTG.map(usuarioLocalSTG =>
         </div>
     </td>
     </tr>`
-)
+);
 
 const modificarUsuario = (id) => {
-    let userModal = document.getElementById(`userModal${id}`).value
-    let passModal = document.getElementById(`passModal${id}`).value
-    let array = []
+  let userModal = document.getElementById(`userModal${id}`).value;
+  let passModal = document.getElementById(`passModal${id}`).value;
+  let array = [];
 
-    for (let i = 0; i < usuarioSTG.length; i++) {
-        const usuariosEnLocalSTG = usuarioSTG[i];
-        if (usuariosEnLocalSTG.id === id) {
-            array.push({ id, user: userModal, pass: passModal, role: usuariosEnLocalSTG.role })
-        } else {
-            array.push(usuariosEnLocalSTG)
-        }
+  for (let i = 0; i < usuarioSTG.length; i++) {
+    const usuariosEnLocalSTG = usuarioSTG[i];
+    if (usuariosEnLocalSTG.id === id) {
+      array.push({
+        id,
+        user: userModal,
+        pass: passModal,
+        role: usuariosEnLocalSTG.role,
+      });
+    } else {
+      array.push(usuariosEnLocalSTG);
     }
+  }
 
-    localStorage.setItem('usuario', JSON.stringify(array))
-    location.href = '/homeadmin.html'
-
-}
+  localStorage.setItem("usuario", JSON.stringify(array));
+  location.href = "/homeadmin.html";
+};
 
 const borrarUsuario = (id) => {
-    let array = []
+  let array = [];
 
-    for (let i = 0; i < usuarioSTG.length; i++) {
-        const usuariosEnLocalSTG = usuarioSTG[i];
-        if (usuariosEnLocalSTG.id !== id) {
-            array.push(usuariosEnLocalSTG)
-        }
+  for (let i = 0; i < usuarioSTG.length; i++) {
+    const usuariosEnLocalSTG = usuarioSTG[i];
+    if (usuariosEnLocalSTG.id !== id) {
+      array.push(usuariosEnLocalSTG);
     }
+  }
 
-    localStorage.setItem('usuario', JSON.stringify(array))
-    location.href = '/homeadmin.html'
-}
-
-
+  localStorage.setItem("usuario", JSON.stringify(array));
+  location.href = "/homeadmin.html";
+};
 
 const habilitarUsuario = (checkHabilitar) => {
-    let array = []
+  let array = [];
 
-    for (let i = 0; i < usuarioSTG.length; i++) {
-        const usuariosEnLocalSTG = usuarioSTG[i];
-        if (usuariosEnLocalSTG.checkHabilitar !== 'false') {
-            array.push(usuariosEnLocalSTG.checkHabilitar = 'true')
-        }
+  for (let i = 0; i < usuarioSTG.length; i++) {
+    const usuariosEnLocalSTG = usuarioSTG[i];
+    if (usuariosEnLocalSTG.checkHabilitar !== "false") {
+      array.push((usuariosEnLocalSTG.checkHabilitar = "true"));
     }
+  }
 
-    localStorage.setItem('usuario', JSON.stringify(array))
-    location.href = '/homeadmin.html'
-}
+  localStorage.setItem("usuario", JSON.stringify(array));
+  location.href = "/homeadmin.html";
+};
