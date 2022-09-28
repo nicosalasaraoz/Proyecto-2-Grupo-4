@@ -8,7 +8,7 @@ const PRODUCTS = [
         name: 'Call of Duty®: Modern Warfare® II',
         descripcion: 'En Call of Duty®: Modern Warfare® II, los jugadores se verán inmersos en un conflicto a escala global.',
         img: "https://cdn.akamai.steamstatic.com/steam/apps/1938090/header.jpg?t=1662612400",
-        video: "https://cdn.akamai.steamstatic.com/steam/apps/256906179/movie480_vp9.webm?t=1663275402"
+        video: "https://cdn.akamai.steamstatic.com/steam/apps/256906179/movie480_vp9.webm?t=1663275402", 
       },
       {
         id: 'product2',

@@ -1,4 +1,4 @@
-/*
+
 function logout() {
 
     const localSTGUsers = JSON.parse(localStorage.getItem('user')) || []
@@ -26,4 +26,3 @@ function logout() {
 
     }
 }
-*/
