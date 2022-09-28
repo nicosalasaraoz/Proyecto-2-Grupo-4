@@ -70,7 +70,9 @@ tBody.innerHTML = usuarioSTG.map(
         <!-- boton habilitar -->
     
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+        <button type="button" class="btn btn-warning${
+            usuarioLocalSTG.habilitado ? ' d-none' : ' d-block'
+        }"data-bs-toggle="modal"
             data-bs-target="#exampleModal3${usuarioLocalSTG.id}">
             Habilitar
         </button>
@@ -134,14 +136,15 @@ const borrarUsuario = (id) => {
   location.href = "/homeadmin.html";
 };
 
-const habilitarUsuario = (checkHabilitar) => {
+const habilitarUsuario = id => {
   let array = [];
 
   for (let i = 0; i < usuarioSTG.length; i++) {
     const usuariosEnLocalSTG = usuarioSTG[i];
-    if (usuariosEnLocalSTG.checkHabilitar !== "false") {
-      array.push((usuariosEnLocalSTG.checkHabilitar = "true"));
+    if (usuariosEnLocalSTG.id === id) {
+      usuariosEnLocalSTG.habilitado = true;
     }
+    array.push(usuariosEnLocalSTG);
   }
 
   localStorage.setItem("usuario", JSON.stringify(array));

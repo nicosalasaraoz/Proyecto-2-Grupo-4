@@ -9,7 +9,7 @@ function login() {
     let userExists = localSTG.filter(local => local.user === user)
 
     if (userExists.length > 0) {
-        if (userExists[0].pass === pass) {
+        if (userExists[0].pass === pass && habilitado) {
             localStorage.setItem('id', JSON.stringify(userExists[0].id))
             setTimeout(() => {
                 userExists[0].role === 'admin'
