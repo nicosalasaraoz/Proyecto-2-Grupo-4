@@ -1,4 +1,5 @@
 
+// funcion crear usuario desde el Admi
 let button = document.getElementById('crearusuario').addEventListener('click', O => {
     let user = document.getElementById('user').value;
     let pass = document.getElementById('pass').value;
