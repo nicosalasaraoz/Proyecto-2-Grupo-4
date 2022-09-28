@@ -5,7 +5,7 @@
         let usuarioExistente = localSTG.filter(local => local.id === Number(id))
 
         if (id === null) {
-            location.href = './login.html'
+            location.href = './log-in.html'
         } else if (usuarioExistente[0].role === 'user') {
             location.href = 'users.html'
         }
