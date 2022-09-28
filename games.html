@@ -20,7 +20,7 @@
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
   </head>
-     <header>
+  <header>
         <!-- navbar -->
       <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="navbar-color">
         <div class="container-fluid hover-links ms-5 mt-0">
@@ -38,15 +38,8 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-
               <li class="nav-item">
-                <a class="nav-link active text-light me-3" href="/contacto.html">CONTACTO</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-light me-3" href="/nosotros.html">NOSOTROS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-light me-3" href="/index.html">CERRAR SESIÓN</a>
+                <button type="button" class="btn btn-primary" onclick="logout()"> CERRAR SESION</button>
               </li>
             </ul>
           </div>
@@ -258,6 +251,7 @@
       </div>
     </footer>
     <script src="/index.js/games.js"></script>
+    <script src="/index.js/logout.js"></script>
     <!-- End of Footer -->
   </body>
 </html>
