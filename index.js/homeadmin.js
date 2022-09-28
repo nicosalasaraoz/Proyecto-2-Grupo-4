@@ -19,6 +19,7 @@ let button = document.getElementById('crearusuario').addEventListener('click', O
                     array.push({ id: localSTG.length + 1, user, pass, role: 'user' })
                     localStorage.setItem('usuario', JSON.stringify(array))
                     console.log(array)
+                    window.location.reload()
                 } else {
                         alert('contraseñas no son iguales')
                         }
@@ -28,6 +29,4 @@ let button = document.getElementById('crearusuario').addEventListener('click', O
         }
     })
     
-
-
- 
+    
