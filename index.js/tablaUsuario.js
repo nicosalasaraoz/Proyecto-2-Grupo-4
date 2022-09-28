@@ -70,12 +70,12 @@ tBody.innerHTML = usuarioSTG.map(usuarioLocalSTG =>
     
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-            data-bs-target="#exampleModal2${usuarioLocalSTG.id}">
+            data-bs-target="#exampleModal3${usuarioLocalSTG.id}">
             Habilitar
         </button>
     
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal2${usuarioLocalSTG.id}" tabindex="-1"
+        <div class="modal fade" id="exampleModal3${usuarioLocalSTG.id}" tabindex="-1"
             aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -87,7 +87,7 @@ tBody.innerHTML = usuarioSTG.map(usuarioLocalSTG =>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary"
                             data-bs-dismiss="modal">NO</button>
-                        <button type="button" class="btn btn-primary" onclick="borrarUsuario(${usuarioLocalSTG.id})">SI</button>
+                        <button type="button" class="btn btn-primary" onclick="habilitarUsuario(${usuarioLocalSTG.id})">SI</button>
                     </div>
                 </div>
             </div>
@@ -129,18 +129,18 @@ const borrarUsuario = (id) => {
     location.href = '/homeadmin.html'
 }
 
-// const cambiarRole = (id) => {
-//     let array = []
 
-//     for (let i = 0; i < usuarioSTG.length; i++) {
-//         const usuariosEnLocalSTG = usuarioSTG[i];
-//         if (usuariosEnLocalSTG.id === id) {
-//             array.push({ id, user: usuariosEnLocalSTG.user, pass: usuariosEnLocalSTG.pass, role: usuariosEnLocalSTG.role === 'admin' ? 'user' : 'admin' })
-//         } else {
-//             array.push(usuariosEnLocalSTG)
-//         }
-//     }
 
-//     localStorage.setItem('usuario', JSON.stringify(array))
-//     location.href = '../html/homeAdmin.html'
-// }
+const habilitarUsuario = (checkHabilitar) => {
+    let array = []
+
+    for (let i = 0; i < usuarioSTG.length; i++) {
+        const usuariosEnLocalSTG = usuarioSTG[i];
+        if (usuariosEnLocalSTG.checkHabilitar !== 'false') {
+            array.push(usuariosEnLocalSTG.checkHabilitar = 'true')
+        }
+    }
+
+    localStorage.setItem('usuario', JSON.stringify(array))
+    location.href = '/homeadmin.html'
+}
