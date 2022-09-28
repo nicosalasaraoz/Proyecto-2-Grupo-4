@@ -1,4 +1,4 @@
-/*
+
 function logout() {
 
     const localSTGUsers = JSON.parse(localStorage.getItem('user')) || []
@@ -20,10 +20,9 @@ function logout() {
         localStorage.setItem('user', JSON.stringify(arrayUser))
         localStorage.removeItem('id')
 
-        setTimeout(() => {
+        setTimeout(() => {s
             location.href = "index.html"
         }, 3000)
 
     }
 }
-*/
