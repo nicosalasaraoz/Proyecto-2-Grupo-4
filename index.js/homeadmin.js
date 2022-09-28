@@ -1,4 +1,5 @@
 
+//funcionalidad Crear usuario
 let button = document.getElementById('crearusuario').addEventListener('click', O => {
     let user = document.getElementById('user').value;
     let pass = document.getElementById('pass').value;
@@ -13,7 +14,7 @@ let button = document.getElementById('crearusuario').addEventListener('click', O
                 array.push(usuarioEnLocalSTG)
             }
             let userExists = localSTG.filter(local => local.user === user)
-                console.log(userExists)
+                console.log('userExists',userExists)
             if (userExists.length === 0) {
                 if (pass === validPass) {
                     array.push({ id: localSTG.length + 1, user, pass, role: 'user' })
@@ -28,3 +29,6 @@ let button = document.getElementById('crearusuario').addEventListener('click', O
         }
     })
     
+//funcionalidad tabla usuario
+
+ 
