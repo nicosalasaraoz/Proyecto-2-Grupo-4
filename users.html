@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Render Games</title>
+    <title>Usuarios</title>
+    <link rel="icon" href="img/logo.png" />
     <link rel="stylesheet" href="/css/principal.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
@@ -28,36 +29,74 @@
     ></script>
   </head>
   <body class="mt-5">
-	  <header class="pt-4">
+    <header class="pt-4">
       <!-- navbar -->
-      <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="navbar-color">
+      <nav
+        class="navbar navbar-expand-lg bg-secondary fixed-top"
+        id="navbar-color"
+      >
         <div class="container-fluid hover-links ms-5 mt-0">
           <!-- LOGO -->
           <div class="row">
             <div class="col-4">
-              <a href="../pages/index.html" class="m-0 p-0 d-flex flex-column align-items-center text-decoration-none">
-                <img class="rounded-circle" src="/img/logo.png" width="75" height="40" alt="logo">
+              <a
+                href="../index.html"
+                class="m-0 p-0 d-flex flex-column align-items-center text-decoration-none"
+              >
+                <img
+                  class="rounded-circle"
+                  src="/img/logo.png"
+                  width="75"
+                  height="40"
+                  alt="logo"
+                />
               </a>
             </div>
           </div>
-      
+
           <!-- FIN LOGO -->
-          <button class="navbar-toggler ham-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation" id="ham-btn" >
-            <img id="ham-btn" src="https://store.cloudflare.steamstatic.com/public/shared/images/responsive/header_menu_hamburger.png" alt="">
+          <button
+            class="navbar-toggler ham-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            id="ham-btn"
+          >
+            <img
+              id="ham-btn"
+              src="https://store.cloudflare.steamstatic.com/public/shared/images/responsive/header_menu_hamburger.png"
+              alt=""
+            />
             <!-- <span class="navbar-toggler-icon"></span> -->
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active text-light me-3" href="../contacto.html">CONTACTO</a>
+                <a
+                  class="nav-link active text-light me-3"
+                  href="../contacto.html"
+                  >CONTACTO</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-light me-3" href="../nosotros.html">NOSOTROS</a>
+                <a
+                  class="nav-link active text-light me-3"
+                  href="../nosotros.html"
+                  >NOSOTROS</a
+                >
               </li>
               <li class="nav-item">
                 <button type="button" class="btn btn-primary" onclick="logout()"> CERRAR SESION</button>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  onclick="logout();"
+                >
+                  CERRAR SESION
+                </button>
               </li>
             </ul>
           </div>
@@ -67,41 +106,56 @@
     </header>
     <main>
       <section class="mt-5 container">
-        <div class=" bg-dark card m-3">
+        <div class="bg-dark card m-3">
           <div class="row g-0">
-            <div class="d-flex justify-content-center col=12 col-lg-4 ">
-              <img id="img_to_flip" src="https://cdn.cloudflare.steamstatic.com/steam/apps/594650/header_alt_assets_13.jpg?t=1663231217" class="img-fluid rounded-start m-2" alt="...">
+            <div class="d-flex justify-content-center col=12 col-lg-4">
+              <img
+                id="img_to_flip"
+                src="https://cdn.cloudflare.steamstatic.com/steam/apps/594650/header_alt_assets_13.jpg?t=1663231217"
+                class="img-fluid rounded-start m-2"
+                alt="..."
+              />
             </div>
             <div class="col-lg-8">
               <div class="card-body text-white row justify-content-center">
                 <h3 class="card-title">SUPER OFERTAS</h3>
-                <br>
-                <p class="card-text ">Super ofertas del 50% durante todo el mes de Septiembre!.</p>
-                <p class="card-text"> No desaproveches esta oportunidad de conseguir tus juegos favoritos a un bajo costo</p>
-                <br>
-                <br>
+                <br />
+                <p class="card-text">
+                  Super ofertas del 50% durante todo el mes de Septiembre!.
+                </p>
+                <p class="card-text">
+                  No desaproveches esta oportunidad de conseguir tus juegos
+                  favoritos a un bajo costo
+                </p>
+                <br />
+                <br />
               </div>
               <div class="card-footer d-flex">
-                <a class=" ms-auto btn btn-light" href="/error_404.html">VER OFERTAS</a>
+                <a class="ms-auto btn btn-light" href="/error_404.html"
+                  >VER OFERTAS</a
+                >
               </div>
             </div>
           </div>
-        </div>  
+        </div>
       </section>
-               <!-- inicio Search button -->
+      <!-- inicio Search button -->
       <div class="container my-5">
-        <input class="form-control p-3" id="busqueda" placeholder="Escriba su búsqueda aquí ..."
-               oninput="renderGames()">
+        <input
+          class="form-control p-3"
+          id="busqueda"
+          placeholder="Escriba su búsqueda aquí ..."
+          oninput="renderGames()"
+        />
       </div>
-            <!-- fin del Search button -->
+      <!-- fin del Search button -->
 
       <div class="d-flex justify-content-center bg-secondary mt-4">
-        <h1 class=" justify-content-center text-white my-2 ">CATEGORIAS</h1>
+        <h1 class="justify-content-center text-white my-2">CATEGORIAS</h1>
       </div>
       <div class="container-fluid">
         <div class="carousel-inner container-fluid">
-          <div  id="games" class="row">
-          </div>
+          <div id="games" class="row"></div>
         </div>
       </div>
       <div>
@@ -109,22 +163,57 @@
       </div>
       <div class="container-fluid">
         <div class="row d-flex text-white justify-content-center">
-          <div class=" d=flex  row col-10 col-lg-5 col-xl-3 my-4">
-            <h3 class="text-center ">JUDGMENT</h3>
-            <video class="d-flex justify-content-center" src="https://cdn.cloudflare.steamstatic.com/steam/apps/256901464/movie480_vp9.webm?t=1663168014" autoplay loop muted controls width="300" height="200"></video>
+          <div class="d=flex row col-10 col-lg-5 col-xl-3 my-4">
+            <h3 class="text-center">JUDGMENT</h3>
+            <video
+              class="d-flex justify-content-center"
+              src="https://cdn.cloudflare.steamstatic.com/steam/apps/256901464/movie480_vp9.webm?t=1663168014"
+              autoplay
+              loop
+              muted
+              controls
+              width="300"
+              height="200"
+            ></video>
           </div>
-          <div class=" d-flex row col-10 col-lg-5 col-xl-3 my-4">
+          <div class="d-flex row col-10 col-lg-5 col-xl-3 my-4">
             <h3 class="text-center">ISONZO</h3>
-            <video class="d-flex justify-content-center" src="https://cdn.cloudflare.steamstatic.com/steam/apps/256903402/movie480_vp9.webm?t=1663067272" autoplay loop muted controls width="300" height="200"></video>
+            <video
+              class="d-flex justify-content-center"
+              src="https://cdn.cloudflare.steamstatic.com/steam/apps/256903402/movie480_vp9.webm?t=1663067272"
+              autoplay
+              loop
+              muted
+              controls
+              width="300"
+              height="200"
+            ></video>
           </div>
           <div class="d-flex row col-10 col-lg-5 col-xl-3 my-4">
             <h3 class="text-center">METAL: HELLSINGER</h3>
-            <video class="d-flex justify-content-center" src="https://cdn.cloudflare.steamstatic.com/steam/apps/256905893/movie480_vp9.webm?t=1663228675" autoplay loop muted controls width="300" height="200"></video>
+            <video
+              class="d-flex justify-content-center"
+              src="https://cdn.cloudflare.steamstatic.com/steam/apps/256905893/movie480_vp9.webm?t=1663228675"
+              autoplay
+              loop
+              muted
+              controls
+              width="300"
+              height="200"
+            ></video>
           </div>
-          <div class=" d-flex row col-10 col-lg-5 col-xl-3 my-4">
+          <div class="d-flex row col-10 col-lg-5 col-xl-3 my-4">
             <h3 class="text-center">THERE IS NOT LIGHT</h3>
-            <video class="d-flex justify-content-center" src="https://cdn.cloudflare.steamstatic.com/steam/apps/256905520/movie480_vp9.webm?t=1662992302" autoplay loop muted controls width="300" height="200"></video>
-
+            <video
+              class="d-flex justify-content-center"
+              src="https://cdn.cloudflare.steamstatic.com/steam/apps/256905520/movie480_vp9.webm?t=1662992302"
+              autoplay
+              loop
+              muted
+              controls
+              width="300"
+              height="200"
+            ></video>
           </div>
         </div>
       </div>
@@ -132,40 +221,75 @@
 
     <footer class="mt-auto bg-secondary">
       <div class="row m-0 mt-4 p-0 pt-4 text-white w-100 hover-links">
-        <div class="col-12 col-sm-12 col-md-4 pb-3 d-flex flex-column align-items-center mt-3">
-          <a href="./index.html" class="m-0 p-0 d-flex flex-column align-items-center text-decoration-none">
-            <img class="rounded-circle" src="/img/logo.png" width="140" height="90" alt="logo">
+        <div
+          class="col-12 col-sm-12 col-md-4 pb-3 d-flex flex-column align-items-center mt-3"
+        >
+          <a
+            href="./index.html"
+            class="m-0 p-0 d-flex flex-column align-items-center text-decoration-none"
+          >
+            <img
+              class="rounded-circle"
+              src="/img/logo.png"
+              width="140"
+              height="90"
+              alt="logo"
+            />
           </a>
         </div>
         <div class="col-12 col-sm-6 col-md-4 ps-4" id="info-footer">
           <p class="h5 mb-3 text-black">Información</p>
           <div class="mb-2">
-            <a class="text-dark text-decoration-none" href="../pages/error_404.html">Términos & condiciones</a>
+            <a
+              class="text-dark text-decoration-none"
+              href="../pages/error_404.html"
+              >Términos & condiciones</a
+            >
           </div>
           <div class="mb-2">
-            <a class="text-dark text-decoration-none" href="../pages/error_404.html">Política de privacidad</a>
+            <a
+              class="text-dark text-decoration-none"
+              href="../error_404.html"
+              >Política de privacidad</a
+            >
           </div>
           <div class="mb-2">
-            <a class="text-dark text-decoration-none" href="../pages/contacto.html">Contacto</a>
+            <a
+              class="text-dark text-decoration-none"
+              href="../contacto.html"
+              >Contacto</a
+            >
           </div>
         </div>
         <div class="col-12 col-sm-6 col-md-4 ps-4" id="redes">
           <p class="h5 mb-3 text-black">Redes sociales</p>
           <div class="mb-2">
             <i class="fa-brands fa-facebook"></i>
-            <a class="text-dark text-decoration-none" href="https://www.facebook.com/">Facebook</a>
+            <a
+              class="text-dark text-decoration-none"
+              href="https://www.facebook.com/"
+              >Facebook</a
+            >
           </div>
           <div class="mb-2">
             <i class="fa-brands fa-github"></i>
-            <a class="text-dark text-decoration-none" href="https://github.com/nicosalasaraoz/proyecto_1_grupo2">GitHub</a>
+            <a
+              class="text-dark text-decoration-none"
+              href="https://github.com/nicosalasaraoz/proyecto_1_grupo2"
+              >GitHub</a
+            >
           </div>
           <div class="mb-2">
             <i class="fa-brands fa-linkedin"></i>
-            <a class="text-dark text-decoration-none" href="https://www.linkedin.com/">Linkedin</a>
+            <a
+              class="text-dark text-decoration-none"
+              href="https://www.linkedin.com/"
+              >Linkedin</a
+            >
           </div>
         </div>
         <div class="col-xs-12 p-0 mt-2 copyright">
-          <p class="m-0 my-2 text-white text-center"> © 2022 - Render Games </p>
+          <p class="m-0 my-2 text-white text-center">© 2022 - Render Games</p>
         </div>
       </div>
     </footer>
@@ -174,6 +298,6 @@
     <script src="/index.js/users.js"></script>
     <script src="/index.js/imagen.js"></script>
     <script src="/index.js/validarusuario.js"></script>
-
+    <script src="/index.js/logout.js"></script>
   </body>
 </html>

@@ -21,7 +21,13 @@ label {
   font-weight: 500;
   color: white;
 }
-span {
+
+#span2 {
+  font-weight: 500;
+  color: white;
+}
+
+#span3 {
   font-weight: 500;
   color: black;
 }
@@ -38,4 +44,3 @@ span {
   z-index: -100;
   background-size: cover;
 }
-
