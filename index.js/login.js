@@ -8,8 +8,8 @@ function login() {
     let localSTG = JSON.parse(localStorage.getItem('usuario')) || []
     let userExists = localSTG.filter(local => local.user === user)
 
-    if (userExists.length > 0) {
-        if (userExists[0].pass === pass && habilitado) {
+    if (userExists.length > 0 && userExists[0].habilitado) {
+        if (userExists[0].pass=== pass ) {
             localStorage.setItem('id', JSON.stringify(userExists[0].id))
             setTimeout(() => {
                 userExists[0].role === 'admin'
@@ -22,6 +22,6 @@ function login() {
         
         
     }else{
-        alert("tu correo electronico no está registrado")
+        alert("tu correo electronico no está registrado/habilitado")
     }
 }

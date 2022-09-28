@@ -72,7 +72,7 @@ tBody.innerHTML = usuarioSTG.map(
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-warning${
             usuarioLocalSTG.habilitado ? ' d-none' : ' d-block'
-        }"data-bs-toggle="modal"
+        } " data-bs-toggle="modal"
             data-bs-target="#exampleModal3${usuarioLocalSTG.id}">
             Habilitar
         </button>
